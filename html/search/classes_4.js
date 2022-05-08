@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['recursivefibonacci_0',['RecursiveFibonacci',['../class_recursive_fibonacci.html',1,'']]]
+  ['program_0',['Program',['../class_program.html',1,'']]]
 ];

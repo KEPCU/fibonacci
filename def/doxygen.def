@@ -751,6 +751,125 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
 }; /* class */
 class = {
+  cp-id     = 'class_program';
+  cp-name   = 'Program';
+  cp-section = {
+    sec-kind = 'public-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_program_1ada72f8d1518f89bc2e6ad807d5059564';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Main';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+string[]
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'args';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
+      sec-mem-desc-line = '94';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_program_8cs_1ae494e584df2260401c2fce82e5ca8d53';
+        sec-mem-ref-line = '50';
+        sec-mem-ref-name = 'GetFibonacciAverage';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_program_1a2b30e6d082882ef66bb6fd7c3610b3bc';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetFibonacci';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
+      sec-mem-desc-line = '12';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+<summary>
+Get fibonacci in a range from 0 to number, generate a csv file 
+with the times of each type of fibonacci for each number between 0 to number. 
+</summary>
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+<param name="number">upper limit of fibonacci to find</param>
+<returns>Does not return anything, generates a csv file </returns> 
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_program_1ae494e584df2260401c2fce82e5ca8d53';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetFibonacciAverage';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+<summary>
+Get average fibonacci in a range from 0 to number, generate a csv file 
+with the times of each type of fibonacci for each number between 0 to number
+</summary>
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+<remarks>Are 20 repetitions to obtain a time average</remarks>
+<param name="number">upper limit of fibonacci to find</param>
+<returns>Does not return anything, generates a csv file </returns> 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_program_8cs_1ada72f8d1518f89bc2e6ad807d5059564';
+        sec-mem-ref-line = '94';
+        sec-mem-ref-name = 'Main';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'E:/C#/UNI/fibonacci/Program.cs';
+  cp-fileline  = '5';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'Program';
+        node-link = {
+          node-link-id = 'class_program';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
   cp-id     = 'class_recursive_fibonacci';
   cp-name   = 'RecursiveFibonacci';
   cp-ref     = {
@@ -976,134 +1095,6 @@ _EnD_oF_dEf_TeXt_;
 file = {
   file-id   = '_program_8cs';
   file-name = 'Program.cs';
-    func = {
-    func-member = {
-      func-mem-kind = 'function';
-      func-mem-id   = '_program_8cs_1a2d65b6e86f15c68b14dba89b2c1d3f31';
-      func-mem-virt = normal;
-      func-mem-prot = public;
-      func-mem-type = <<_EnD_oF_dEf_TeXt_
-void
-_EnD_oF_dEf_TeXt_;
-      func-mem-name = 'GetFibonacci';
-      func-mem-param = {
-        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
-int
-_EnD_oF_dEf_TeXt_;
-        func-mem-param-declname = 'number';
-      }; /*        func-mem-param--param */
-      func-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
-      func-mem-desc-line = '9';
-      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-<summary>
-Get fibonacci in a range from 0 to number, generate a csv file 
-with the times of each type of fibonacci for each number between 0 to number. 
-</summary>
-_EnD_oF_dEf_TeXt_;
-      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
-<param name="number">upper limit of fibonacci to find</param>
-<returns>Does not return anything, generates a csv file </returns> 
-_EnD_oF_dEf_TeXt_;
-    }; /* func-member */
-    func-member = {
-      func-mem-kind = 'function';
-      func-mem-id   = '_program_8cs_1a3f407964ee2c190e19ae6f0dfa191232';
-      func-mem-virt = normal;
-      func-mem-prot = public;
-      func-mem-type = <<_EnD_oF_dEf_TeXt_
-void
-_EnD_oF_dEf_TeXt_;
-      func-mem-name = 'GetFibonacciAverage';
-      func-mem-param = {
-        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
-int
-_EnD_oF_dEf_TeXt_;
-        func-mem-param-declname = 'number';
-      }; /*        func-mem-param--param */
-      func-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
-      func-mem-desc-line = '46';
-      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-<summary>
-Get average fibonacci in a range from 0 to number, generate a csv file 
-with the times of each type of fibonacci for each number between 0 to number
-</summary>
-_EnD_oF_dEf_TeXt_;
-      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
-<remarks>Are 20 repetitions to obtain a time average</remarks>
-<param name="number">upper limit of fibonacci to find</param>
-<returns>Does not return anything, generates a csv file </returns> 
-_EnD_oF_dEf_TeXt_;
-    }; /* func-member */
-    func-member = {
-      func-mem-kind = 'function';
-      func-mem-id   = '_program_8cs_1a1165552572f0be568e7c831182619262';
-      func-mem-virt = normal;
-      func-mem-prot = public;
-      func-mem-type = <<_EnD_oF_dEf_TeXt_
-Console.
-_EnD_oF_dEf_TeXt_;
-      func-mem-name = 'WriteLine';
-      func-mem-param = {
-        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
-"number: "
-_EnD_oF_dEf_TeXt_;
-      }; /*        func-mem-param--param */
-      func-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
-      func-mem-desc-line = '89';
-      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-    }; /* func-member */
-    func-member = {
-      func-mem-kind = 'function';
-      func-mem-id   = '_program_8cs_1a04ebc856abebd2836a7752b0ea05c28e';
-      func-mem-virt = normal;
-      func-mem-prot = public;
-      func-mem-type = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-      func-mem-name = 'GetFibonacciAverage';
-      func-mem-param = {
-        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
-number
-_EnD_oF_dEf_TeXt_;
-      }; /*        func-mem-param--param */
-      func-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
-      func-mem-desc-line = '92';
-      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-    }; /* func-member */
-    };
-    var = {
-    var-member = {
-      var-mem-kind = 'variable';
-      var-mem-id   = '_program_8cs_1a7106e2abc437ad981830d14176d15f09';
-      var-mem-virt = normal;
-      var-mem-prot = public;
-      var-mem-type = <<_EnD_oF_dEf_TeXt_
-int
-_EnD_oF_dEf_TeXt_;
-      var-mem-name = 'number';
-      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
-= Int32.Parse(Console.ReadLine() ?? "0")
-_EnD_oF_dEf_TeXt_;
-      var-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
-      var-mem-desc-line = '91';
-      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
-
-_EnD_oF_dEf_TeXt_;
-    }; /* var-member */
-    };
   file-full-name  = 'E:/C#/UNI/fibonacci/Program.cs';
   file-first-line = '1';
   file-briefdesc  = <<_EnD_oF_dEf_TeXt_
