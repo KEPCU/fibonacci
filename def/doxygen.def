@@ -1,0 +1,1214 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'class_fibonacci';
+  cp-name   = 'Fibonacci';
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'class_iterative_fibonacci';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'class_logarithmic_fibonacci';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'class_memory_fibonacci';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-ref     = {
+    ref-type = derived;
+    ref-id   = 'class_recursive_fibonacci';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_fibonacci_1ae991598d39abf5a5a72e00eaf36e9067';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Fibonacci';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '9';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1af7ee7a59e8062e7bd290348227d181a8';
+        sec-mem-ref-line = '7';
+        sec-mem-ref-name = 'Number';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_fibonacci_1a828d888ab8276b80a74a0f749b80ea61';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Fibonacci';
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '13';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'property';
+    sec-member = {
+      sec-mem-kind = 'property';
+      sec-mem-id   = 'class_fibonacci_1af7ee7a59e8062e7bd290348227d181a8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Number';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '7';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1ae991598d39abf5a5a72e00eaf36e9067';
+        sec-mem-ref-line = '9';
+        sec-mem-ref-name = 'Fibonacci';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1aca9c2c604a7dcb7be0f3404e42bdb709';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'IterativeFibonacci::GetFibonacci';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a20a7b9a832648cf6fdbb1e741f1e2610';
+        sec-mem-ref-line = '40';
+        sec-mem-ref-name = 'RecursiveFibonacci::GetFibonacci';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a1d880a08c81156fa5d303664f7a58cd5';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'MemoryFibonacci::GetFibonacci';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a2e29cd6f4e1c4c5835c94c9320383d7c';
+        sec-mem-ref-line = '84';
+        sec-mem-ref-name = 'LogarithmicFibonacci::GetFibonacci';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'property';
+      sec-mem-id   = 'class_fibonacci_1a699518128f5bc58d32a5331ed7bc7054';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+float
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Time';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= float.MinValue
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '8';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1aca9c2c604a7dcb7be0f3404e42bdb709';
+        sec-mem-ref-line = '20';
+        sec-mem-ref-name = 'IterativeFibonacci::GetFibonacci';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a20a7b9a832648cf6fdbb1e741f1e2610';
+        sec-mem-ref-line = '40';
+        sec-mem-ref-name = 'RecursiveFibonacci::GetFibonacci';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a1d880a08c81156fa5d303664f7a58cd5';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'MemoryFibonacci::GetFibonacci';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a2e29cd6f4e1c4c5835c94c9320383d7c';
+        sec-mem-ref-line = '84';
+        sec-mem-ref-name = 'LogarithmicFibonacci::GetFibonacci';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+  cp-fileline  = '6';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+<summary>
+ Base class for Fibonacci Iterative, Recursive, Memory and Logarithmic  <br>
+ </summary>
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'Fibonacci';
+        node-link = {
+          node-link-id = 'class_fibonacci';
+        };
+      }; /* node */
+      node = {
+        node-id    = 2;
+        node-label = 'IterativeFibonacci';
+        node-link = {
+          node-link-id = 'class_iterative_fibonacci';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 3;
+        node-label = 'LogarithmicFibonacci';
+        node-link = {
+          node-link-id = 'class_logarithmic_fibonacci';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 4;
+        node-label = 'MemoryFibonacci';
+        node-link = {
+          node-link-id = 'class_memory_fibonacci';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+      node = {
+        node-id    = 5;
+        node-label = 'RecursiveFibonacci';
+        node-link = {
+          node-link-id = 'class_recursive_fibonacci';
+        };
+        node-child = {
+          child-id = '1';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 1;
+        node-label = 'Fibonacci';
+        node-link = {
+          node-link-id = 'class_fibonacci';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_iterative_fibonacci';
+  cp-name   = 'IterativeFibonacci';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_fibonacci';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_iterative_fibonacci_1a5444cc36563bd543591fd4e8c35ee44c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'IterativeFibonacci';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '17';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_iterative_fibonacci_1a5e2013f7d5d56a7efc7657dc41b1fa12';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'IterativeFibonacci';
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '18';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_iterative_fibonacci_1aca9c2c604a7dcb7be0f3404e42bdb709';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetFibonacci';
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '20';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1af7ee7a59e8062e7bd290348227d181a8';
+        sec-mem-ref-line = '7';
+        sec-mem-ref-name = 'Fibonacci::Number';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a699518128f5bc58d32a5331ed7bc7054';
+        sec-mem-ref-line = '8';
+        sec-mem-ref-name = 'Fibonacci::Time';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+  cp-fileline  = '16';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Fibonacci';
+        node-link = {
+          node-link-id = 'class_fibonacci';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'IterativeFibonacci';
+        node-link = {
+          node-link-id = 'class_iterative_fibonacci';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Fibonacci';
+        node-link = {
+          node-link-id = 'class_fibonacci';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'IterativeFibonacci';
+        node-link = {
+          node-link-id = 'class_iterative_fibonacci';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_logarithmic_fibonacci';
+  cp-name   = 'LogarithmicFibonacci';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_fibonacci';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_logarithmic_fibonacci_1ae76ce25d8327af55c9c15a734fb8d373';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'LogarithmicFibonacci';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '81';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_logarithmic_fibonacci_1af1a5b8d92dc18d9669728ea7945a6337';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'LogarithmicFibonacci';
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '82';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_logarithmic_fibonacci_1a2e29cd6f4e1c4c5835c94c9320383d7c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetFibonacci';
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '84';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1af7ee7a59e8062e7bd290348227d181a8';
+        sec-mem-ref-line = '7';
+        sec-mem-ref-name = 'Fibonacci::Number';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a699518128f5bc58d32a5331ed7bc7054';
+        sec-mem-ref-line = '8';
+        sec-mem-ref-name = 'Fibonacci::Time';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+  cp-fileline  = '80';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Fibonacci';
+        node-link = {
+          node-link-id = 'class_fibonacci';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'LogarithmicFibonacci';
+        node-link = {
+          node-link-id = 'class_logarithmic_fibonacci';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Fibonacci';
+        node-link = {
+          node-link-id = 'class_fibonacci';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'LogarithmicFibonacci';
+        node-link = {
+          node-link-id = 'class_logarithmic_fibonacci';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_memory_fibonacci';
+  cp-name   = 'MemoryFibonacci';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_fibonacci';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_memory_fibonacci_1a8a0670cccf42a10b7c59f6e27d0c3cf9';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'MemoryFibonacci';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '57';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_memory_fibonacci_1a8ce77590c1240a4014e6a09fda34204a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'MemoryFibonacci';
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_memory_fibonacci_1af33a94ecf9808e1d9a29019bdee53662';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Pop';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'key';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '60';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a006a1745640e05b3500fc4757dc9d30d';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'Memory';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_memory_fibonacci_1a1d880a08c81156fa5d303664f7a58cd5';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetFibonacci';
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '64';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a1d880a08c81156fa5d303664f7a58cd5';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'GetFibonacci';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1af7ee7a59e8062e7bd290348227d181a8';
+        sec-mem-ref-line = '7';
+        sec-mem-ref-name = 'Fibonacci::Number';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a699518128f5bc58d32a5331ed7bc7054';
+        sec-mem-ref-line = '8';
+        sec-mem-ref-name = 'Fibonacci::Time';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a1d880a08c81156fa5d303664f7a58cd5';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'GetFibonacci';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'property';
+    sec-member = {
+      sec-mem-kind = 'property';
+      sec-mem-id   = 'class_memory_fibonacci_1a006a1745640e05b3500fc4757dc9d30d';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Dictionary< int, int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Memory';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= new Dictionary<int, int>()
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a83909eed7a79f76fc701248b086e367c';
+        sec-mem-ref-line = '73';
+        sec-mem-ref-name = 'GetFibonacci';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1af33a94ecf9808e1d9a29019bdee53662';
+        sec-mem-ref-line = '60';
+        sec-mem-ref-name = 'Pop';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_memory_fibonacci_1a83909eed7a79f76fc701248b086e367c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetFibonacci';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '73';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a1d880a08c81156fa5d303664f7a58cd5';
+        sec-mem-ref-line = '64';
+        sec-mem-ref-name = 'GetFibonacci';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a006a1745640e05b3500fc4757dc9d30d';
+        sec-mem-ref-line = '56';
+        sec-mem-ref-name = 'Memory';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+  cp-fileline  = '55';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Fibonacci';
+        node-link = {
+          node-link-id = 'class_fibonacci';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'MemoryFibonacci';
+        node-link = {
+          node-link-id = 'class_memory_fibonacci';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Fibonacci';
+        node-link = {
+          node-link-id = 'class_fibonacci';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'MemoryFibonacci';
+        node-link = {
+          node-link-id = 'class_memory_fibonacci';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_recursive_fibonacci';
+  cp-name   = 'RecursiveFibonacci';
+  cp-ref     = {
+    ref-type = base;
+    ref-id   = 'class_fibonacci';
+    ref-prot = public;
+    ref-virt = non-virtual;
+  };
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_recursive_fibonacci_1a64a1216adafedddf25dade0d32c3cbff';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'RecursiveFibonacci';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '37';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_recursive_fibonacci_1aa04c876b2d40b9e2e35ff06472996ada';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'RecursiveFibonacci';
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_recursive_fibonacci_1a20a7b9a832648cf6fdbb1e741f1e2610';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetFibonacci';
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '40';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a20a7b9a832648cf6fdbb1e741f1e2610';
+        sec-mem-ref-line = '40';
+        sec-mem-ref-name = 'GetFibonacci';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1af7ee7a59e8062e7bd290348227d181a8';
+        sec-mem-ref-line = '7';
+        sec-mem-ref-name = 'Fibonacci::Number';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a699518128f5bc58d32a5331ed7bc7054';
+        sec-mem-ref-line = '8';
+        sec-mem-ref-name = 'Fibonacci::Time';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a20a7b9a832648cf6fdbb1e741f1e2610';
+        sec-mem-ref-line = '40';
+        sec-mem-ref-name = 'GetFibonacci';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_recursive_fibonacci_1aab56ffd0281251ecbf52ef7acdc5f3b2';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetFibonacci';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '49';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a20a7b9a832648cf6fdbb1e741f1e2610';
+        sec-mem-ref-line = '40';
+        sec-mem-ref-name = 'GetFibonacci';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+  cp-fileline  = '36';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-inheritancegraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Fibonacci';
+        node-link = {
+          node-link-id = 'class_fibonacci';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'RecursiveFibonacci';
+        node-link = {
+          node-link-id = 'class_recursive_fibonacci';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 2;
+        node-label = 'Fibonacci';
+        node-link = {
+          node-link-id = 'class_fibonacci';
+        };
+      }; /* node */
+      node = {
+        node-id    = 1;
+        node-label = 'RecursiveFibonacci';
+        node-link = {
+          node-link-id = 'class_recursive_fibonacci';
+        };
+        node-child = {
+          child-id = '2';
+          relation = public-inheritance;
+        }; /* node-child */
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+file = {
+  file-id   = '_fibonacci_8cs';
+  file-name = 'Fibonacci.cs';
+  file-full-name  = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs';
+  file-name = '.NETCoreApp,Version=v6.0.AssemblyAttributes.cs';
+  file-full-name  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'fibonacci_8_assembly_info_8cs';
+  file-name = 'fibonacci.AssemblyInfo.cs';
+  file-full-name  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/fibonacci.AssemblyInfo.cs';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = 'fibonacci_8_global_usings_8g_8cs';
+  file-name = 'fibonacci.GlobalUsings.g.cs';
+  file-full-name  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/fibonacci.GlobalUsings.g.cs';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_program_8cs';
+  file-name = 'Program.cs';
+    func = {
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = '_program_8cs_1a2d65b6e86f15c68b14dba89b2c1d3f31';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'GetFibonacci';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        func-mem-param-declname = 'number';
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
+      func-mem-desc-line = '3';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = '_program_8cs_1a1165552572f0be568e7c831182619262';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+Console.
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'WriteLine';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+"number: "
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
+      func-mem-desc-line = '33';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    func-member = {
+      func-mem-kind = 'function';
+      func-mem-id   = '_program_8cs_1ac2e5d8f7e4992102c1978ef816c55d09';
+      func-mem-virt = normal;
+      func-mem-prot = public;
+      func-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-name = 'GetFibonacci';
+      func-mem-param = {
+        func-mem-param-type = <<_EnD_oF_dEf_TeXt_
+number
+_EnD_oF_dEf_TeXt_;
+      }; /*        func-mem-param--param */
+      func-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
+      func-mem-desc-line = '35';
+      func-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      func-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* func-member */
+    };
+    var = {
+    var-member = {
+      var-mem-kind = 'variable';
+      var-mem-id   = '_program_8cs_1a7106e2abc437ad981830d14176d15f09';
+      var-mem-virt = normal;
+      var-mem-prot = public;
+      var-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      var-mem-name = 'number';
+      var-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= Int32.Parse(Console.ReadLine() ?? "0")
+_EnD_oF_dEf_TeXt_;
+      var-mem-desc-file = 'E:/C#/UNI/fibonacci/Program.cs';
+      var-mem-desc-line = '34';
+      var-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      var-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* var-member */
+    };
+  file-full-name  = 'E:/C#/UNI/fibonacci/Program.cs';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+  namespace = {
+    ns-id   = 'namespaceglobal_1_1_system';
+    ns-name = 'global::System';
+  ns-filename  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/fibonacci.GlobalUsings.g.cs';
+  ns-fileline  = '2';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespaceglobal_1_1_system_1_1_collections_1_1_generic';
+    ns-name = 'global::System::Collections::Generic';
+  ns-filename  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/fibonacci.GlobalUsings.g.cs';
+  ns-fileline  = '3';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespaceglobal_1_1_system_1_1_i_o';
+    ns-name = 'global::System::IO';
+  ns-filename  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/fibonacci.GlobalUsings.g.cs';
+  ns-fileline  = '4';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespaceglobal_1_1_system_1_1_linq';
+    ns-name = 'global::System::Linq';
+  ns-filename  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/fibonacci.GlobalUsings.g.cs';
+  ns-fileline  = '5';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespaceglobal_1_1_system_1_1_net_1_1_http';
+    ns-name = 'global::System::Net::Http';
+  ns-filename  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/fibonacci.GlobalUsings.g.cs';
+  ns-fileline  = '6';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespaceglobal_1_1_system_1_1_threading';
+    ns-name = 'global::System::Threading';
+  ns-filename  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/fibonacci.GlobalUsings.g.cs';
+  ns-fileline  = '7';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespaceglobal_1_1_system_1_1_threading_1_1_tasks';
+    ns-name = 'global::System::Threading::Tasks';
+  ns-filename  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/fibonacci.GlobalUsings.g.cs';
+  ns-fileline  = '8';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespace_system';
+    ns-name = 'System';
+  ns-filename  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs';
+  ns-fileline  = '2';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespace_system_1_1_diagnostics';
+    ns-name = 'System::Diagnostics';
+  ns-filename  = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+  ns-fileline  = '1';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespace_system_1_1_reflection';
+    ns-name = 'System::Reflection';
+  ns-filename  = 'E:/C#/UNI/fibonacci/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs';
+  ns-fileline  = '3';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };
+  namespace = {
+    ns-id   = 'namespace_system_1_1_text';
+    ns-name = 'System::Text';
+  ns-filename  = 'E:/C#/UNI/fibonacci/Program.cs';
+  ns-fileline  = '1';
+  ns-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  ns-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  };

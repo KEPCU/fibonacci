@@ -1,0 +1,106 @@
+\hypertarget{_fibonacci_8cs_source}{}\doxysection{Fibonacci.\+cs}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00001}00001 \textcolor{keyword}{using} System.Diagnostics;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00006}\mbox{\hyperlink{class_fibonacci}{00006}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_fibonacci}{Fibonacci}} \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00007}\mbox{\hyperlink{class_fibonacci_af7ee7a59e8062e7bd290348227d181a8}{00007}}   \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_fibonacci_af7ee7a59e8062e7bd290348227d181a8}{Number}} \{\textcolor{keyword}{get}; \textcolor{keyword}{set};\} = 0;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00008}\mbox{\hyperlink{class_fibonacci_a699518128f5bc58d32a5331ed7bc7054}{00008}}   \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_fibonacci_a699518128f5bc58d32a5331ed7bc7054}{Time}} \{\textcolor{keyword}{get}; \textcolor{keyword}{set};\} = \textcolor{keywordtype}{float}.MinValue;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00009}\mbox{\hyperlink{class_fibonacci_ae991598d39abf5a5a72e00eaf36e9067}{00009}}   \textcolor{keyword}{public} \mbox{\hyperlink{class_fibonacci_ae991598d39abf5a5a72e00eaf36e9067}{Fibonacci}}(\textcolor{keywordtype}{int} number) \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00010}00010     \mbox{\hyperlink{class_fibonacci_af7ee7a59e8062e7bd290348227d181a8}{Number}} = number;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00011}00011   \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00013}\mbox{\hyperlink{class_fibonacci_a828d888ab8276b80a74a0f749b80ea61}{00013}}   \textcolor{keyword}{public} \mbox{\hyperlink{class_fibonacci_a828d888ab8276b80a74a0f749b80ea61}{Fibonacci}}() \{ \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00014}00014 \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00016}\mbox{\hyperlink{class_iterative_fibonacci}{00016}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_iterative_fibonacci}{IterativeFibonacci}} : \mbox{\hyperlink{class_fibonacci}{Fibonacci}} \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00017}\mbox{\hyperlink{class_iterative_fibonacci_a5444cc36563bd543591fd4e8c35ee44c}{00017}}   \textcolor{keyword}{public} \mbox{\hyperlink{class_iterative_fibonacci_a5444cc36563bd543591fd4e8c35ee44c}{IterativeFibonacci}}(\textcolor{keywordtype}{int} number) : base(number) \{ \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00018}\mbox{\hyperlink{class_iterative_fibonacci_a5e2013f7d5d56a7efc7657dc41b1fa12}{00018}}   \textcolor{keyword}{public} \mbox{\hyperlink{class_iterative_fibonacci_a5e2013f7d5d56a7efc7657dc41b1fa12}{IterativeFibonacci}}() : base() \{ \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00020}\mbox{\hyperlink{class_iterative_fibonacci_aca9c2c604a7dcb7be0f3404e42bdb709}{00020}}   \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_iterative_fibonacci_aca9c2c604a7dcb7be0f3404e42bdb709}{GetFibonacci}}() \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00021}00021     var time = \textcolor{keyword}{new} Stopwatch();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00022}00022     time.Start();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00023}00023     \textcolor{keywordtype}{int} a = 0, b = 1, c;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00024}00024     \textcolor{keywordflow}{if}( \mbox{\hyperlink{class_fibonacci_af7ee7a59e8062e7bd290348227d181a8}{Number}} == 0) \textcolor{keywordflow}{return} a;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00025}00025     \textcolor{keywordflow}{for}(var i = 2; i <= \mbox{\hyperlink{class_fibonacci_af7ee7a59e8062e7bd290348227d181a8}{Number}}; i++) \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00026}00026         c = a + b;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00027}00027         a = b;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00028}00028         b = c;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00029}00029      \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00030}00030      time.Stop();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00031}00031      \mbox{\hyperlink{class_fibonacci_a699518128f5bc58d32a5331ed7bc7054}{Time}} = (float)(time.Elapsed.TotalSeconds + 0.00000000001);}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00032}00032      \textcolor{keywordflow}{return} b;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00033}00033   \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00034}00034 \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00036}\mbox{\hyperlink{class_recursive_fibonacci}{00036}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_recursive_fibonacci}{RecursiveFibonacci}} : \mbox{\hyperlink{class_fibonacci}{Fibonacci}} \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00037}\mbox{\hyperlink{class_recursive_fibonacci_a64a1216adafedddf25dade0d32c3cbff}{00037}}   \textcolor{keyword}{public} \mbox{\hyperlink{class_recursive_fibonacci_a64a1216adafedddf25dade0d32c3cbff}{RecursiveFibonacci}}(\textcolor{keywordtype}{int} number) : base(number) \{ \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00038}\mbox{\hyperlink{class_recursive_fibonacci_aa04c876b2d40b9e2e35ff06472996ada}{00038}}   \textcolor{keyword}{public} \mbox{\hyperlink{class_recursive_fibonacci_aa04c876b2d40b9e2e35ff06472996ada}{RecursiveFibonacci}}() : base() \{ \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00040}\mbox{\hyperlink{class_recursive_fibonacci_a20a7b9a832648cf6fdbb1e741f1e2610}{00040}}   \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_recursive_fibonacci_a20a7b9a832648cf6fdbb1e741f1e2610}{GetFibonacci}}() \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00041}00041     var time = \textcolor{keyword}{new} Stopwatch();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00042}00042     time.Start();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00043}00043     var getFibonacci = \mbox{\hyperlink{class_recursive_fibonacci_a20a7b9a832648cf6fdbb1e741f1e2610}{GetFibonacci}}(\mbox{\hyperlink{class_fibonacci_af7ee7a59e8062e7bd290348227d181a8}{Number}});}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00044}00044     time.Stop();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00045}00045      \mbox{\hyperlink{class_fibonacci_a699518128f5bc58d32a5331ed7bc7054}{Time}} = (float)(time.Elapsed.TotalSeconds + 0.00000000001);}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00046}00046     \textcolor{keywordflow}{return} getFibonacci;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00047}00047   \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00049}\mbox{\hyperlink{class_recursive_fibonacci_aab56ffd0281251ecbf52ef7acdc5f3b2}{00049}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_recursive_fibonacci_aab56ffd0281251ecbf52ef7acdc5f3b2}{GetFibonacci}}(\textcolor{keywordtype}{int} number) \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00050}00050     \textcolor{keywordflow}{if} (number < 2) \textcolor{keywordflow}{return} number;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00051}00051     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_recursive_fibonacci_a20a7b9a832648cf6fdbb1e741f1e2610}{GetFibonacci}}(number -\/ 1) + \mbox{\hyperlink{class_recursive_fibonacci_a20a7b9a832648cf6fdbb1e741f1e2610}{GetFibonacci}}(number -\/ 2);}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00052}00052   \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00053}00053 \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00055}\mbox{\hyperlink{class_memory_fibonacci}{00055}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_memory_fibonacci}{MemoryFibonacci}} : \mbox{\hyperlink{class_fibonacci}{Fibonacci}} \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00056}\mbox{\hyperlink{class_memory_fibonacci_a006a1745640e05b3500fc4757dc9d30d}{00056}}   Dictionary<int,int> \mbox{\hyperlink{class_memory_fibonacci_a006a1745640e05b3500fc4757dc9d30d}{Memory}} \{\textcolor{keyword}{get}; \textcolor{keyword}{set};\} = \textcolor{keyword}{new} Dictionary<int, int>();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00057}\mbox{\hyperlink{class_memory_fibonacci_a8a0670cccf42a10b7c59f6e27d0c3cf9}{00057}}   \textcolor{keyword}{public} \mbox{\hyperlink{class_memory_fibonacci_a8a0670cccf42a10b7c59f6e27d0c3cf9}{MemoryFibonacci}}(\textcolor{keywordtype}{int} number) : base(number) \{ \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00058}\mbox{\hyperlink{class_memory_fibonacci_a8ce77590c1240a4014e6a09fda34204a}{00058}}   \textcolor{keyword}{public} \mbox{\hyperlink{class_memory_fibonacci_a8ce77590c1240a4014e6a09fda34204a}{MemoryFibonacci}}() : base() \{ \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00060}\mbox{\hyperlink{class_memory_fibonacci_af33a94ecf9808e1d9a29019bdee53662}{00060}}   \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_memory_fibonacci_af33a94ecf9808e1d9a29019bdee53662}{Pop}}(\textcolor{keywordtype}{int} key) \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00061}00061     \mbox{\hyperlink{class_memory_fibonacci_a006a1745640e05b3500fc4757dc9d30d}{Memory}}.Remove(key);}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00062}00062   \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00064}\mbox{\hyperlink{class_memory_fibonacci_a1d880a08c81156fa5d303664f7a58cd5}{00064}}   \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_memory_fibonacci_a1d880a08c81156fa5d303664f7a58cd5}{GetFibonacci}}() \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00065}00065     var time = \textcolor{keyword}{new} Stopwatch();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00066}00066     time.Start();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00067}00067     var getFibonacci = \mbox{\hyperlink{class_memory_fibonacci_a1d880a08c81156fa5d303664f7a58cd5}{GetFibonacci}}(\mbox{\hyperlink{class_fibonacci_af7ee7a59e8062e7bd290348227d181a8}{Number}});}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00068}00068     time.Stop();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00069}00069     \mbox{\hyperlink{class_fibonacci_a699518128f5bc58d32a5331ed7bc7054}{Time}} = (float)(time.Elapsed.TotalSeconds + 0.00000000001);}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00070}00070     \textcolor{keywordflow}{return} getFibonacci;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00071}00071   \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00072}00072   }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00073}\mbox{\hyperlink{class_memory_fibonacci_a83909eed7a79f76fc701248b086e367c}{00073}}   \textcolor{keywordtype}{int} \mbox{\hyperlink{class_memory_fibonacci_a83909eed7a79f76fc701248b086e367c}{GetFibonacci}}(\textcolor{keywordtype}{int} number) \{ }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00074}00074     \textcolor{keywordflow}{if}(number < 1) \textcolor{keywordflow}{return} 0; }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00075}00075     \textcolor{keywordflow}{if}(number < 3) \textcolor{keywordflow}{return} 1; }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00076}00076     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_memory_fibonacci_a006a1745640e05b3500fc4757dc9d30d}{Memory}}.ContainsKey(number) ? \mbox{\hyperlink{class_memory_fibonacci_a006a1745640e05b3500fc4757dc9d30d}{Memory}}[number] : \mbox{\hyperlink{class_memory_fibonacci_a006a1745640e05b3500fc4757dc9d30d}{Memory}}[number] = \mbox{\hyperlink{class_memory_fibonacci_a1d880a08c81156fa5d303664f7a58cd5}{GetFibonacci}}(number -\/ 1) + \mbox{\hyperlink{class_memory_fibonacci_a1d880a08c81156fa5d303664f7a58cd5}{GetFibonacci}}(number -\/ 2);}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00077}00077   \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00078}00078 \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00080}\mbox{\hyperlink{class_logarithmic_fibonacci}{00080}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_logarithmic_fibonacci}{LogarithmicFibonacci}} : \mbox{\hyperlink{class_fibonacci}{Fibonacci}} \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00081}\mbox{\hyperlink{class_logarithmic_fibonacci_ae76ce25d8327af55c9c15a734fb8d373}{00081}}   \textcolor{keyword}{public} \mbox{\hyperlink{class_logarithmic_fibonacci_ae76ce25d8327af55c9c15a734fb8d373}{LogarithmicFibonacci}}(\textcolor{keywordtype}{int} number) : base(number) \{ \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00082}\mbox{\hyperlink{class_logarithmic_fibonacci_af1a5b8d92dc18d9669728ea7945a6337}{00082}}   \textcolor{keyword}{public} \mbox{\hyperlink{class_logarithmic_fibonacci_af1a5b8d92dc18d9669728ea7945a6337}{LogarithmicFibonacci}}() : base() \{ \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00084}\mbox{\hyperlink{class_logarithmic_fibonacci_a2e29cd6f4e1c4c5835c94c9320383d7c}{00084}}   \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_logarithmic_fibonacci_a2e29cd6f4e1c4c5835c94c9320383d7c}{GetFibonacci}}() \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00085}00085     var time = \textcolor{keyword}{new} Stopwatch();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00086}00086     time.Start();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00087}00087     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_fibonacci_af7ee7a59e8062e7bd290348227d181a8}{Number}} < 1) \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00088}00088     var matrix = \textcolor{keyword}{new} List<int> \{ 0, 1, 1, 1 \};}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00089}00089     var matrixPower = matrix;}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00090}00090     \textcolor{keywordflow}{for}(var i = 2; i < \mbox{\hyperlink{class_fibonacci_af7ee7a59e8062e7bd290348227d181a8}{Number}}; i++) \{}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00091}00091         matrixPower = \textcolor{keyword}{new} List<int> \{ matrixPower[0]*matrix[0] + matrixPower[1]*matrix[2],}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00092}00092                                       matrixPower[0]*matrix[1] + matrixPower[0]*matrix[3],}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00093}00093                                       matrixPower[2]*matrix[0] + matrixPower[3]*matrix[2],}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00094}00094                                       matrixPower[2]*matrix[1] + matrixPower[3]*matrix[3] \};}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00095}00095     \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00096}00096     matrix = \textcolor{keyword}{new} List<int> \{ matrixPower[1], matrixPower[3] \};}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00097}00097     time.Stop();}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00098}00098     \mbox{\hyperlink{class_fibonacci_a699518128f5bc58d32a5331ed7bc7054}{Time}} = (float)(time.Elapsed.TotalSeconds + 0.00000000001);}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00099}00099     \textcolor{keywordflow}{return} matrix[1];}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00100}00100   \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00101}00101 \}}
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_fibonacci_8cs_source_l00104}00104 }
+
+\end{DoxyCode}
