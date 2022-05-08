@@ -91,11 +91,11 @@ public class Program {
                 logarithmicFibonacci.GetFibonacci();
                 averageTime[3] += logarithmicFibonacci.Time;        
             }
-            //getting the average delay per method, in case value equals to negative infinite then value equals to float.MinValue
-            averageTime[0] = (averageTime[0] / (float)repetitions) == float.NegativeInfinity ? float.MinValue : (averageTime[0] / (float)repetitions);
-            averageTime[1] = (averageTime[1] / (float)repetitions) == float.NegativeInfinity ? float.MinValue : (averageTime[1] / (float)repetitions);
-            averageTime[2] = (averageTime[2] / (float)repetitions) == float.NegativeInfinity ? float.MinValue : (averageTime[2] / (float)repetitions);
-            averageTime[3] = (averageTime[3] / (float)repetitions) == float.NegativeInfinity ? float.MinValue : (averageTime[3] / (float)repetitions);
+            //getting the average delay per method, in case value equals to negative infinite then value equals to (float)0.00000000001
+            averageTime[0] = (averageTime[0] / (float)repetitions) == float.NegativeInfinity ? (float)0.00000000001 : (averageTime[0] / (float)repetitions);
+            averageTime[1] = (averageTime[1] / (float)repetitions) == float.NegativeInfinity ? (float)0.00000000001 : (averageTime[1] / (float)repetitions);
+            averageTime[2] = (averageTime[2] / (float)repetitions) == float.NegativeInfinity ? (float)0.00000000001 : (averageTime[2] / (float)repetitions);
+            averageTime[3] = (averageTime[3] / (float)repetitions) == float.NegativeInfinity ? (float)0.00000000001 : (averageTime[3] / (float)repetitions);
             //adding the time per funtion
             csvContent.AppendLine($"{i},{averageTime[0]},{averageTime[1]},{averageTime[2]},{averageTime[3]}"); 
         }

@@ -78,11 +78,11 @@
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00091}00091                 logarithmicFibonacci.GetFibonacci();}
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00092}00092                 averageTime[3] += logarithmicFibonacci.Time;        }
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00093}00093             \}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00094}00094             \textcolor{comment}{//getting the average delay per method, in case value equals to negative infinite then value equals to float.MinValue}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00095}00095             averageTime[0] = (averageTime[0] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? \textcolor{keywordtype}{float}.MinValue : (averageTime[0] / (float)repetitions);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00096}00096             averageTime[1] = (averageTime[1] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? \textcolor{keywordtype}{float}.MinValue : (averageTime[1] / (float)repetitions);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00097}00097             averageTime[2] = (averageTime[2] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? \textcolor{keywordtype}{float}.MinValue : (averageTime[2] / (float)repetitions);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00098}00098             averageTime[3] = (averageTime[3] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? \textcolor{keywordtype}{float}.MinValue : (averageTime[3] / (float)repetitions);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00094}00094             \textcolor{comment}{//getting the average delay per method, in case value equals to negative infinite then value equals to (float)0.00000000001}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00095}00095             averageTime[0] = (averageTime[0] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.00000000001 : (averageTime[0] / (\textcolor{keywordtype}{float})repetitions);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00096}00096             averageTime[1] = (averageTime[1] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.00000000001 : (averageTime[1] / (\textcolor{keywordtype}{float})repetitions);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00097}00097             averageTime[2] = (averageTime[2] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.00000000001 : (averageTime[2] / (\textcolor{keywordtype}{float})repetitions);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00098}00098             averageTime[3] = (averageTime[3] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.00000000001 : (averageTime[3] / (\textcolor{keywordtype}{float})repetitions);}
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00099}00099             \textcolor{comment}{//adding the time per funtion}}
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00100}00100             csvContent.AppendLine(\$\textcolor{stringliteral}{"{}\{i\},\{averageTime[0]\},\{averageTime[1]\},\{averageTime[2]\},\{averageTime[3]\}"{}}); }
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00101}00101         \}}

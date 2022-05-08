@@ -4,8 +4,12 @@ using System.Diagnostics;
 /// Base class for Fibonacci Iterative, Recursive, Memory and Logarithmic  
 /// </summary>
 public class Fibonacci {
-    ///<summary> Upper limit of the fibonacci to be found with GetFibonacci </summary>
-    ///<remarks>0 default value</remarks>
+    ///<summary> 
+    ///Upper limit of the fibonacci to be found with GetFibonacci 
+    ///</summary>
+    ///<remarks>
+    ///0 default value
+    ///</remarks>
     public int Number {get; set;} = 0;
     ///<summary> Time in which the fibonacci is found </summary>
      ///<remarks>Float MinValue default value</remarks>
