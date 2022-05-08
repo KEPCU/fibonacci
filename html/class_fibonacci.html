@@ -81,10 +81,10 @@ $(function() {
 <div class="center"><img src="class_fibonacci__inherit__graph.png" border="0" usemap="#a_fibonacci_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_fibonacci_inherit__map" id="a_fibonacci_inherit__map">
 <area shape="rect" title="Base class for Fibonacci Iterative, Recursive, Memory and Logarithmic" alt="" coords="268,5,427,112"/>
-<area shape="rect" href="class_iterative_fibonacci.html" title=" " alt="" coords="5,189,148,311"/>
-<area shape="rect" href="class_logarithmic_fibonacci.html" title=" " alt="" coords="173,189,338,311"/>
-<area shape="rect" href="class_memory_fibonacci.html" title=" " alt="" coords="362,160,517,340"/>
-<area shape="rect" href="class_recursive_fibonacci.html" title=" " alt="" coords="541,175,695,325"/>
+<area shape="rect" href="class_iterative_fibonacci.html" title="The Fibonacci child class uses a loop to find the fibonacci." alt="" coords="5,189,148,311"/>
+<area shape="rect" href="class_logarithmic_fibonacci.html" title="The Fibonacci child class uses matrix multiplication to find the fibonacci." alt="" coords="173,189,338,311"/>
+<area shape="rect" href="class_memory_fibonacci.html" title="The Fibonacci child class uses a Dictionary as memory to find the fibonacci using the Dictionary to c..." alt="" coords="362,160,517,340"/>
+<area shape="rect" href="class_recursive_fibonacci.html" title="The Fibonacci child class, uses a recursive loop to find the fibonacci" alt="" coords="541,175,695,325"/>
 </map>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -101,6 +101,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae991598d39abf5a5a72e00eaf36e9067"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fibonacci.html#ae991598d39abf5a5a72e00eaf36e9067">Fibonacci</a> (int number)</td></tr>
+<tr class="memdesc:ae991598d39abf5a5a72e00eaf36e9067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contructor for define Number property  <a href="class_fibonacci.html#ae991598d39abf5a5a72e00eaf36e9067">More...</a><br /></td></tr>
 <tr class="separator:ae991598d39abf5a5a72e00eaf36e9067"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828d888ab8276b80a74a0f749b80ea61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fibonacci.html#a828d888ab8276b80a74a0f749b80ea61">Fibonacci</a> ()</td></tr>
 <tr class="separator:a828d888ab8276b80a74a0f749b80ea61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,6 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:af7ee7a59e8062e7bd290348227d181a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fibonacci.html#af7ee7a59e8062e7bd290348227d181a8">Number</a> = 0<code> [get, set]</code></td></tr>
+<tr class="memdesc:af7ee7a59e8062e7bd290348227d181a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upper limit of the fibonacci to be found with GetFibonacci  <a href="class_fibonacci.html#af7ee7a59e8062e7bd290348227d181a8">More...</a><br /></td></tr>
 <tr class="separator:af7ee7a59e8062e7bd290348227d181a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a699518128f5bc58d32a5331ed7bc7054"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fibonacci.html#a699518128f5bc58d32a5331ed7bc7054">Time</a> = float.MinValue<code> [get, set]</code></td></tr>
 <tr class="separator:a699518128f5bc58d32a5331ed7bc7054"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,9 +136,18 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fibonacci_8cs_source.html#l00009">9</a> of file <a class="el" href="_fibonacci_8cs_source.html">Fibonacci.cs</a>.</p>
+<p>Contructor for define Number property </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>upper limit of fibonacci to find</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>summary&gt; Default constructor </p>
 
-<p class="reference">References <a class="el" href="_fibonacci_8cs_source.html#l00007">Number</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fibonacci_8cs_source.html#l00014">14</a> of file <a class="el" href="_fibonacci_8cs_source.html">Fibonacci.cs</a>.</p>
+
+<p class="reference">References <a class="el" href="_fibonacci_8cs_source.html#l00008">Number</a>.</p>
 
 </div>
 </div>
@@ -155,7 +166,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fibonacci_8cs_source.html#l00013">13</a> of file <a class="el" href="_fibonacci_8cs_source.html">Fibonacci.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fibonacci_8cs_source.html#l00019">19</a> of file <a class="el" href="_fibonacci_8cs_source.html">Fibonacci.cs</a>.</p>
 
 </div>
 </div>
@@ -180,7 +191,10 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fibonacci_8cs_source.html#l00007">7</a> of file <a class="el" href="_fibonacci_8cs_source.html">Fibonacci.cs</a>.</p>
+<p>Upper limit of the fibonacci to be found with GetFibonacci </p>
+<p >summary&gt; Time in which the fibonacci is found </p>
+
+<p class="definition">Definition at line <a class="el" href="_fibonacci_8cs_source.html#l00008">8</a> of file <a class="el" href="_fibonacci_8cs_source.html">Fibonacci.cs</a>.</p>
 
 </div>
 </div>
@@ -204,7 +218,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_fibonacci_8cs_source.html#l00008">8</a> of file <a class="el" href="_fibonacci_8cs_source.html">Fibonacci.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_fibonacci_8cs_source.html#l00010">10</a> of file <a class="el" href="_fibonacci_8cs_source.html">Fibonacci.cs</a>.</p>
 
 </div>
 </div>

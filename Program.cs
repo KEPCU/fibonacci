@@ -1,8 +1,7 @@
 ﻿using System.Text;
 
-
-
 public class Program {  
+
     /// <summary>
     /// Get fibonacci in a range from 0 to number, generate a csv file 
     /// with the times of each type of fibonacci for each number between 0 to number. 
@@ -46,7 +45,6 @@ public class Program {
     /// <remarks>Are 20 repetitions to obtain a time average</remarks>
     /// <param name="number">upper limit of fibonacci to find</param>
     /// <returns>Does not return anything, generates a csv file </returns>
-    
     static void GetFibonacciAverage(int number) {
         var date = DateTime.Now.ToLocalTime();
         var iterativeFibonacci = new IterativeFibonacci();
@@ -89,12 +87,10 @@ public class Program {
         File.AppendAllText($"FibonacciAverage{date.ToString("yyyy-MM-ddTHH-mm")}.csv",csvContent.ToString());
     }
 
-
-
     public static void Main (string[] args) {
         //get a number 
         Console.WriteLine("number: ");
-        // if input value equals to "" or empty, string value equals to 0
+        //if input value equals to "" or empty, string value equals to 0
         int number = Int32.Parse(Console.ReadLine() ?? "0");
         GetFibonacciAverage(number);
     }

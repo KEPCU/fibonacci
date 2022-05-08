@@ -2,7 +2,13 @@
 \label{class_memory_fibonacci}\index{MemoryFibonacci@{MemoryFibonacci}}
 
 
-Inheritance diagram for Memory\+Fibonacci\+:\nopagebreak
+The \mbox{\hyperlink{class_fibonacci}{Fibonacci}} child class uses a Dictionary as memory to find the fibonacci using the Dictionary to consume less time and resources.  
+
+
+
+
+Inheritance diagram for Memory\+Fibonacci\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +17,8 @@ Inheritance diagram for Memory\+Fibonacci\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Memory\+Fibonacci\+:\nopagebreak
+Collaboration diagram for Memory\+Fibonacci\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,29 +29,29 @@ Collaboration diagram for Memory\+Fibonacci\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_memory_fibonacci_a8a0670cccf42a10b7c59f6e27d0c3cf9}{Memory\+Fibonacci}} (int number)
-\item 
+\begin{DoxyCompactList}\small\item\em Contructor for define Number property \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_memory_fibonacci_a8ce77590c1240a4014e6a09fda34204a}{Memory\+Fibonacci}} ()
 \item 
 void \mbox{\hyperlink{class_memory_fibonacci_af33a94ecf9808e1d9a29019bdee53662}{Pop}} (int key)
-\item 
+\begin{DoxyCompactList}\small\item\em Remove a item or element of Dictionary \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_memory_fibonacci_a1d880a08c81156fa5d303664f7a58cd5}{Get\+Fibonacci}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get fibonacci of Number Property using memory (Memory Property)\end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
 Dictionary$<$ int, int $>$ \mbox{\hyperlink{class_memory_fibonacci_a006a1745640e05b3500fc4757dc9d30d}{Memory}} = new Dictionary$<$int, int$>$()\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Data structure for storing the fibonacci already found \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{class_memory_fibonacci_a83909eed7a79f76fc701248b086e367c}{Get\+Fibonacci}} (int number)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get fibonacci of Number Property using memory (Memory Property)\end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_fibonacci}{Fibonacci}} child class uses a Dictionary as memory to find the fibonacci using the Dictionary to consume less time and resources. 
 
-
-Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00055}{55}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
+Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00105}{105}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
 
 
 
@@ -57,7 +64,20 @@ Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00055}{55}} of file \
 
 
 
-Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00057}{57}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
+Contructor for define Number property 
+
+Using \mbox{\hyperlink{class_fibonacci}{Fibonacci}} Class contructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em number} & upper limit of fibonacci to find\\
+\hline
+\end{DoxyParams}
+summary\texorpdfstring{$>$}{>} Default constructor 
+
+Using \mbox{\hyperlink{class_fibonacci}{Fibonacci}} Class contructor
+
+Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00113}{113}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
 
 \mbox{\Hypertarget{class_memory_fibonacci_a8ce77590c1240a4014e6a09fda34204a}\label{class_memory_fibonacci_a8ce77590c1240a4014e6a09fda34204a}} 
 \index{MemoryFibonacci@{MemoryFibonacci}!MemoryFibonacci@{MemoryFibonacci}}
@@ -67,7 +87,7 @@ Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00057}{57}} of file \
 
 
 
-Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00058}{58}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
+Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00116}{116}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
 
 
 
@@ -80,20 +100,29 @@ Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00058}{58}} of file \
 
 
 
-Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00064}{64}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
+Get fibonacci of Number Property using memory (Memory Property)
+
+The Time property is equal to the delay time, use Memory(\+Dicctionary) for save data found. Use other method. /remarks\texorpdfstring{$>$}{>} \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_fibonacci}{Fibonacci}} of Number 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00131}{131}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
 
 
 
-References \mbox{\hyperlink{_fibonacci_8cs_source_l00064}{Get\+Fibonacci()}}, \mbox{\hyperlink{_fibonacci_8cs_source_l00007}{Fibonacci.\+Number}}, and \mbox{\hyperlink{_fibonacci_8cs_source_l00008}{Fibonacci.\+Time}}.
+References \mbox{\hyperlink{_fibonacci_8cs_source_l00131}{Get\+Fibonacci()}}, \mbox{\hyperlink{_fibonacci_8cs_source_l00008}{Fibonacci.\+Number}}, and \mbox{\hyperlink{_fibonacci_8cs_source_l00010}{Fibonacci.\+Time}}.
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=235pt]{class_memory_fibonacci_a1d880a08c81156fa5d303664f7a58cd5_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -108,13 +137,26 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00073}{73}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
+Get fibonacci of Number Property using memory (Memory Property)
+
+The Time property is equal to the delay time, use Memory(\+Dicctionary) for save data found. Use other method. /remarks\texorpdfstring{$>$}{>} 
+\begin{DoxyParams}{Parameters}
+{\em number} & number of fibonacci to find\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_fibonacci}{Fibonacci}} of Number 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00153}{153}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
 
 
 
-References \mbox{\hyperlink{_fibonacci_8cs_source_l00064}{Get\+Fibonacci()}}, and \mbox{\hyperlink{_fibonacci_8cs_source_l00056}{Memory}}.
+References \mbox{\hyperlink{_fibonacci_8cs_source_l00131}{Get\+Fibonacci()}}, and \mbox{\hyperlink{_fibonacci_8cs_source_l00108}{Memory}}.
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -129,11 +171,20 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 
-Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00060}{60}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
+Remove a item or element of Dictionary 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to find the element to remove \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00120}{120}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
 
 
 
-References \mbox{\hyperlink{_fibonacci_8cs_source_l00056}{Memory}}.
+References \mbox{\hyperlink{_fibonacci_8cs_source_l00108}{Memory}}.
 
 
 
@@ -146,7 +197,11 @@ References \mbox{\hyperlink{_fibonacci_8cs_source_l00056}{Memory}}.
 
 
 
-Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00056}{56}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
+Data structure for storing the fibonacci already found 
+
+
+
+Definition at line \mbox{\hyperlink{_fibonacci_8cs_source_l00108}{108}} of file \mbox{\hyperlink{_fibonacci_8cs_source}{Fibonacci.\+cs}}.
 
 
 
