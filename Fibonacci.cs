@@ -5,8 +5,10 @@ using System.Diagnostics;
 /// </summary>
 public class Fibonacci {
     ///<summary> Upper limit of the fibonacci to be found with GetFibonacci </summary>
+    ///<remarks>0 default value</remarks>
     public int Number {get; set;} = 0;
     ///<summary> Time in which the fibonacci is found </summary>
+     ///<remarks>Float MinValue default value</remarks>
     public float Time {get; set;} = float.MinValue;
 
     /// <summary> Contructor for define Number property </summary>
