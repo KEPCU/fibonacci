@@ -67,39 +67,83 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="keyword">using</span> System.Text;</div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keywordtype">void</span> GetFibonacci(<span class="keywordtype">int</span> number) {</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    var date = DateTime.Now.ToLocalTime();</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    var iterativeFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_iterative_fibonacci.html">IterativeFibonacci</a>();</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    var recursiveFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_recursive_fibonacci.html">RecursiveFibonacci</a>();</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    var memoryFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_memory_fibonacci.html">MemoryFibonacci</a>();</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    var logarithmicFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_logarithmic_fibonacci.html">LogarithmicFibonacci</a>();</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    StringBuilder csvContent = <span class="keyword">new</span> StringBuilder();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    csvContent.AppendLine(<span class="stringliteral">&quot;Number,Iterative,Rcursive,Memory,Logarithmic&quot;</span>);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; number; i++) {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      iterativeFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_iterative_fibonacci.html">IterativeFibonacci</a>(i);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>      iterativeFibonacci.GetFibonacci();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>      recursiveFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_recursive_fibonacci.html">RecursiveFibonacci</a>(i);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>      recursiveFibonacci.GetFibonacci();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>      </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      memoryFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_memory_fibonacci.html">MemoryFibonacci</a>(i);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>      memoryFibonacci.GetFibonacci();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      logarithmicFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_logarithmic_fibonacci.html">LogarithmicFibonacci</a>(i);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      logarithmicFibonacci.GetFibonacci();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      csvContent.AppendLine($<span class="stringliteral">&quot;{i},{iterativeFibonacci.Time},{recursiveFibonacci.Time},{memoryFibonacci.Time},{logarithmicFibonacci.Time}&quot;</span>);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keywordtype">void</span> GetFibonacci(<span class="keywordtype">int</span> number) {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    var date = DateTime.Now.ToLocalTime();</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    var iterativeFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_iterative_fibonacci.html">IterativeFibonacci</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    var recursiveFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_recursive_fibonacci.html">RecursiveFibonacci</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    var memoryFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_memory_fibonacci.html">MemoryFibonacci</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    var logarithmicFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_logarithmic_fibonacci.html">LogarithmicFibonacci</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    StringBuilder csvContent = <span class="keyword">new</span> StringBuilder();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    csvContent.AppendLine(<span class="stringliteral">&quot;Number,Iterative,Rcursive,Memory,Logarithmic&quot;</span>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; number; i++) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      iterativeFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_iterative_fibonacci.html">IterativeFibonacci</a>(i);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>      iterativeFibonacci.GetFibonacci();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      recursiveFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_recursive_fibonacci.html">RecursiveFibonacci</a>(i);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      recursiveFibonacci.GetFibonacci();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      memoryFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_memory_fibonacci.html">MemoryFibonacci</a>(i);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      memoryFibonacci.GetFibonacci();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    File.AppendAllText($<span class="stringliteral">&quot;fibonacci{date.ToString(&quot;</span>yyyy-MM-ddTHH-mm<span class="stringliteral">&quot;)}.csv&quot;</span>,csvContent.ToString());</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      logarithmicFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_logarithmic_fibonacci.html">LogarithmicFibonacci</a>(i);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      logarithmicFibonacci.GetFibonacci();</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>Console.WriteLine(<span class="stringliteral">&quot;number: &quot;</span>);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">int</span> number = Int32.Parse(Console.ReadLine() ?? <span class="stringliteral">&quot;0&quot;</span>);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>GetFibonacci(number);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      csvContent.AppendLine($<span class="stringliteral">&quot;{i},{iterativeFibonacci.Time},{recursiveFibonacci.Time},{memoryFibonacci.Time},{logarithmicFibonacci.Time}&quot;</span>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    File.AppendAllText($<span class="stringliteral">&quot;fibonacci{date.ToString(&quot;</span>yyyy-MM-ddTHH-mm<span class="stringliteral">&quot;)}.csv&quot;</span>,csvContent.ToString());</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> GetFibonacciAverage(<span class="keywordtype">int</span> number) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    var date = DateTime.Now.ToLocalTime();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    var iterativeFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_iterative_fibonacci.html">IterativeFibonacci</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    var recursiveFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_recursive_fibonacci.html">RecursiveFibonacci</a>();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    var memoryFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_memory_fibonacci.html">MemoryFibonacci</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    var logarithmicFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_logarithmic_fibonacci.html">LogarithmicFibonacci</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    var myFibo = <span class="keyword">new</span> List&lt;Fibonacci&gt;();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    StringBuilder csvContent = <span class="keyword">new</span> StringBuilder();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    csvContent.AppendLine(<span class="stringliteral">&quot;Number,Iterative,Rcursive,Memory,Logarithmic&quot;</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">int</span> repetitions = 20;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; number + 1; i++) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      var averageTime = <span class="keyword">new</span> <span class="keywordtype">float</span>[4];</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; repetitions; j++) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        iterativeFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_iterative_fibonacci.html">IterativeFibonacci</a>(i);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        iterativeFibonacci.GetFibonacci();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        averageTime[0] += iterativeFibonacci.Time;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        recursiveFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_recursive_fibonacci.html">RecursiveFibonacci</a>(i);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        recursiveFibonacci.GetFibonacci();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        averageTime[1] += recursiveFibonacci.Time;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        memoryFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_memory_fibonacci.html">MemoryFibonacci</a>(i);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        memoryFibonacci.GetFibonacci();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">if</span>(j + 1 != repetitions) memoryFibonacci.Pop(i);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        averageTime[2] += memoryFibonacci.Time;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        logarithmicFibonacci = <span class="keyword">new</span> <a class="code hl_class" href="class_logarithmic_fibonacci.html">LogarithmicFibonacci</a>(i);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        logarithmicFibonacci.GetFibonacci();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        averageTime[3] += logarithmicFibonacci.Time;        </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      averageTime[0] /= (float)repetitions;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      averageTime[1] /= (float)repetitions;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      averageTime[2] /= (float)repetitions;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      averageTime[3] /= (float)repetitions;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      csvContent.AppendLine($<span class="stringliteral">&quot;{i},{averageTime[0]},{averageTime[1]},{averageTime[2]},{averageTime[3]}&quot;</span>); </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    File.AppendAllText($<span class="stringliteral">&quot;FibonacciAverage{date.ToString(&quot;</span>yyyy-MM-ddTHH-mm<span class="stringliteral">&quot;)}.csv&quot;</span>,csvContent.ToString());</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">//get a number </span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>Console.WriteLine(<span class="stringliteral">&quot;number: &quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// if input value equals to &quot;&quot; or empty, string value equals to 0</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">int</span> number = Int32.Parse(Console.ReadLine() ?? <span class="stringliteral">&quot;0&quot;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>GetFibonacciAverage(number);</div>
 <div class="ttc" id="aclass_iterative_fibonacci_html"><div class="ttname"><a href="class_iterative_fibonacci.html">IterativeFibonacci</a></div><div class="ttdef"><b>Definition:</b> <a href="_fibonacci_8cs_source.html#l00016">Fibonacci.cs:16</a></div></div>
 <div class="ttc" id="aclass_logarithmic_fibonacci_html"><div class="ttname"><a href="class_logarithmic_fibonacci.html">LogarithmicFibonacci</a></div><div class="ttdef"><b>Definition:</b> <a href="_fibonacci_8cs_source.html#l00080">Fibonacci.cs:80</a></div></div>
 <div class="ttc" id="aclass_memory_fibonacci_html"><div class="ttname"><a href="class_memory_fibonacci.html">MemoryFibonacci</a></div><div class="ttdef"><b>Definition:</b> <a href="_fibonacci_8cs_source.html#l00055">Fibonacci.cs:55</a></div></div>
