@@ -1,8 +1,35 @@
-﻿var fibo = new MemoryFibonacci(10);
+﻿using System.Text;
 
+void GetFibonacci(int number) {
+    var date = DateTime.Now.ToLocalTime();
 
-Console.WriteLine($"{fibo.Number} {fibo.GetFibonacci()} {fibo.Time}");
+    var iterativeFibonacci = new IterativeFibonacci();
+    var recursiveFibonacci = new RecursiveFibonacci();
+    var memoryFibonacci = new MemoryFibonacci();
+    var logarithmicFibonacci = new LogarithmicFibonacci();
 
-var fibo2 = new LogarithmicFibonacci(10);
+    StringBuilder csvContent = new StringBuilder();
+    csvContent.AppendLine("Number,Iterative,Rcursive,Memory,Logarithmic");
 
-Console.WriteLine($"{fibo2.Number} {fibo2.GetFibonacci()} {fibo2.Time}");
+    for(int i = 0; i < number; i++) {
+      iterativeFibonacci = new IterativeFibonacci(i);
+      iterativeFibonacci.GetFibonacci();
+      
+      recursiveFibonacci = new RecursiveFibonacci(i);
+      recursiveFibonacci.GetFibonacci();
+      
+      memoryFibonacci = new MemoryFibonacci(i);
+      memoryFibonacci.GetFibonacci();
+
+      logarithmicFibonacci = new LogarithmicFibonacci(i);
+      logarithmicFibonacci.GetFibonacci();
+
+      csvContent.AppendLine($"{i},{iterativeFibonacci.Time},{recursiveFibonacci.Time},{memoryFibonacci.Time},{logarithmicFibonacci.Time}");
+    }
+
+    File.AppendAllText($"fibonacci{date.ToString("yyyy-MM-ddTHH-mm")}.csv",csvContent.ToString());
+  }
+
+Console.WriteLine("number: ");
+int number = Int32.Parse(Console.ReadLine() ?? "0");
+GetFibonacci(number);
