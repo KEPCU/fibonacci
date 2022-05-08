@@ -1,3 +1,3 @@
-﻿var fibo = new IterativeFibonacci(10);
+﻿var fibo = new RecursiveFibonacci(8);
 
 Console.WriteLine($"{fibo.Number} {fibo.GetFibonacci()} {fibo.Time}");

@@ -29,3 +29,23 @@ public class IterativeFibonacci : Fibonacci {
      return b;
   }
 }
+
+public class RecursiveFibonacci : Fibonacci {
+  public RecursiveFibonacci(int number) : base(number) { }
+  public RecursiveFibonacci() : base() { }
+
+  public int GetFibonacci() {
+    var time = new Stopwatch();
+    time.Start();
+    var getFibonacci = GetFibonacci(Number);
+    time.Stop();
+     Time = (float)(time.Elapsed.TotalSeconds + 0.00000000001);
+    return getFibonacci;
+  }
+
+  int GetFibonacci(int number) {
+    if (number < 2) return number;
+    return GetFibonacci(number - 1) + GetFibonacci(number - 2);
+  }
+}
+
