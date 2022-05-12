@@ -79,7 +79,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_program__coll__graph.png" border="0" usemap="#a_program_coll__map" alt="Collaboration graph"/></div>
 <map name="a_program_coll__map" id="a_program_coll__map">
-<area shape="rect" title="Class for use the Class Fibonacci methods" alt="" coords="5,5,175,156"/>
+<area shape="rect" title="Class for use the Class Fibonacci methods" alt="" coords="5,5,175,171"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -93,9 +93,9 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a2b30e6d082882ef66bb6fd7c3610b3bc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#a2b30e6d082882ef66bb6fd7c3610b3bc">GetFibonacci</a> (int number)</td></tr>
 <tr class="memdesc:a2b30e6d082882ef66bb6fd7c3610b3bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get fibonacci in a range from 0 to number, generate a csv file with the times of each type of fibonacci for each number between 0 to number.  <a href="class_program.html#a2b30e6d082882ef66bb6fd7c3610b3bc">More...</a><br /></td></tr>
 <tr class="separator:a2b30e6d082882ef66bb6fd7c3610b3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae494e584df2260401c2fce82e5ca8d53"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#ae494e584df2260401c2fce82e5ca8d53">GetFibonacciAverage</a> (int number)</td></tr>
-<tr class="memdesc:ae494e584df2260401c2fce82e5ca8d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get average fibonacci in a range from 0 to number, generate a csv file with the times of each type of fibonacci for each number between 0 to number  <a href="class_program.html#ae494e584df2260401c2fce82e5ca8d53">More...</a><br /></td></tr>
-<tr class="separator:ae494e584df2260401c2fce82e5ca8d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf4b7f2825ed5dadc79a6f8c97bff09"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program.html#aaaf4b7f2825ed5dadc79a6f8c97bff09">GetFibonacciAverage</a> (int number, int repetitions)</td></tr>
+<tr class="memdesc:aaaf4b7f2825ed5dadc79a6f8c97bff09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get average fibonacci in a range from 0 to number, generate a csv file with the times of each type of fibonacci for each number between 0 to number  <a href="class_program.html#aaaf4b7f2825ed5dadc79a6f8c97bff09">More...</a><br /></td></tr>
+<tr class="separator:aaaf4b7f2825ed5dadc79a6f8c97bff09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class for use the Class <a class="el" href="class_fibonacci.html" title="Base class for Fibonacci Iterative, Recursive, Memory and Logarithmic">Fibonacci</a> methods </p>
@@ -129,7 +129,7 @@ Static Private Member Functions</h2></td></tr>
 <p>Get fibonacci in a range from 0 to number, generate a csv file with the times of each type of fibonacci for each number between 0 to number. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">number</td><td>upper limit of fibonacci to find</td></tr>
+    <tr><td class="paramname">number</td><td>Upper limit of fibonacci to find</td></tr>
   </table>
   </dd>
 </dl>
@@ -139,8 +139,8 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae494e584df2260401c2fce82e5ca8d53" name="ae494e584df2260401c2fce82e5ca8d53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae494e584df2260401c2fce82e5ca8d53">&#9670;&nbsp;</a></span>GetFibonacciAverage()</h2>
+<a id="aaaf4b7f2825ed5dadc79a6f8c97bff09" name="aaaf4b7f2825ed5dadc79a6f8c97bff09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf4b7f2825ed5dadc79a6f8c97bff09">&#9670;&nbsp;</a></span>GetFibonacciAverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,8 +152,18 @@ Static Private Member Functions</h2></td></tr>
           <td class="memname">static void Program.GetFibonacciAverage </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>number</em></td><td>)</td>
+          <td class="paramname"><em>number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>repetitions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -167,21 +177,22 @@ Static Private Member Functions</h2></td></tr>
 <p >Are 20 repetitions to obtain a time average</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">number</td><td>upper limit of fibonacci to find</td></tr>
+    <tr><td class="paramname">number</td><td>Upper limit of fibonacci to find</td></tr>
+    <tr><td class="paramname">repetitions</td><td>The number of test iterations for testing</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Does not return anything, generates a csv file </dd></dl>
 <p>summary&gt; Function or method for testing and using fibonacci functions and creating a csv file </p>
 
-<p class="definition">Definition at line <a class="el" href="_program_8cs_source.html#l00054">54</a> of file <a class="el" href="_program_8cs_source.html">Program.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_program_8cs_source.html#l00055">55</a> of file <a class="el" href="_program_8cs_source.html">Program.cs</a>.</p>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the caller graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_program_ae494e584df2260401c2fce82e5ca8d53_icgraph.png" border="0" usemap="#aclass_program_ae494e584df2260401c2fce82e5ca8d53_icgraph" alt=""/></div>
-<map name="aclass_program_ae494e584df2260401c2fce82e5ca8d53_icgraph" id="aclass_program_ae494e584df2260401c2fce82e5ca8d53_icgraph">
+<div class="center"><img src="class_program_aaaf4b7f2825ed5dadc79a6f8c97bff09_icgraph.png" border="0" usemap="#aclass_program_aaaf4b7f2825ed5dadc79a6f8c97bff09_icgraph" alt=""/></div>
+<map name="aclass_program_aaaf4b7f2825ed5dadc79a6f8c97bff09_icgraph" id="aclass_program_aaaf4b7f2825ed5dadc79a6f8c97bff09_icgraph">
 <area shape="rect" title="Get average fibonacci in a range from 0 to number, generate a csv file with the times of each type of..." alt="" coords="156,5,355,32"/>
 <area shape="rect" href="class_program.html#ada72f8d1518f89bc2e6ad807d5059564" title=" " alt="" coords="5,5,108,32"/>
 </map>
@@ -213,9 +224,9 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_program_8cs_source.html#l00109">109</a> of file <a class="el" href="_program_8cs_source.html">Program.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_program_8cs_source.html#l00140">140</a> of file <a class="el" href="_program_8cs_source.html">Program.cs</a>.</p>
 
-<p class="reference">References <a class="el" href="_program_8cs_source.html#l00054">GetFibonacciAverage()</a>.</p>
+<p class="reference">References <a class="el" href="_program_8cs_source.html#l00055">GetFibonacciAverage()</a>.</p>
 <div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -224,7 +235,7 @@ Static Private Member Functions</h2></td></tr>
 <div class="center"><img src="class_program_ada72f8d1518f89bc2e6ad807d5059564_cgraph.png" border="0" usemap="#aclass_program_ada72f8d1518f89bc2e6ad807d5059564_cgraph" alt=""/></div>
 <map name="aclass_program_ada72f8d1518f89bc2e6ad807d5059564_cgraph" id="aclass_program_ada72f8d1518f89bc2e6ad807d5059564_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,108,32"/>
-<area shape="rect" href="class_program.html#ae494e584df2260401c2fce82e5ca8d53" title="Get average fibonacci in a range from 0 to number, generate a csv file with the times of each type of..." alt="" coords="156,5,355,32"/>
+<area shape="rect" href="class_program.html#aaaf4b7f2825ed5dadc79a6f8c97bff09" title="Get average fibonacci in a range from 0 to number, generate a csv file with the times of each type of..." alt="" coords="156,5,355,32"/>
 </map>
 </div>
 

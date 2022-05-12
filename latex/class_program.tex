@@ -24,7 +24,7 @@ static void \mbox{\hyperlink{class_program_ada72f8d1518f89bc2e6ad807d5059564}{Ma
 \item 
 static void \mbox{\hyperlink{class_program_a2b30e6d082882ef66bb6fd7c3610b3bc}{Get\+Fibonacci}} (int number)
 \begin{DoxyCompactList}\small\item\em Get fibonacci in a range from 0 to number, generate a csv file with the times of each type of fibonacci for each number between 0 to number. \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{class_program_ae494e584df2260401c2fce82e5ca8d53}{Get\+Fibonacci\+Average}} (int number)
+static void \mbox{\hyperlink{class_program_aaaf4b7f2825ed5dadc79a6f8c97bff09}{Get\+Fibonacci\+Average}} (int number, int repetitions)
 \begin{DoxyCompactList}\small\item\em Get average fibonacci in a range from 0 to number, generate a csv file with the times of each type of fibonacci for each number between 0 to number \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -48,7 +48,7 @@ Get fibonacci in a range from 0 to number, generate a csv file with the times of
 
 
 \begin{DoxyParams}{Parameters}
-{\em number} & upper limit of fibonacci to find\\
+{\em number} & Upper limit of fibonacci to find\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -58,11 +58,11 @@ Does not return anything, generates a csv file
 
 Definition at line \mbox{\hyperlink{_program_8cs_source_l00014}{14}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
 
-\mbox{\Hypertarget{class_program_ae494e584df2260401c2fce82e5ca8d53}\label{class_program_ae494e584df2260401c2fce82e5ca8d53}} 
+\mbox{\Hypertarget{class_program_aaaf4b7f2825ed5dadc79a6f8c97bff09}\label{class_program_aaaf4b7f2825ed5dadc79a6f8c97bff09}} 
 \index{Program@{Program}!GetFibonacciAverage@{GetFibonacciAverage}}
 \index{GetFibonacciAverage@{GetFibonacciAverage}!Program@{Program}}
 \doxysubsubsection{\texorpdfstring{GetFibonacciAverage()}{GetFibonacciAverage()}}
-{\footnotesize\ttfamily static void Program.\+Get\+Fibonacci\+Average (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily static void Program.\+Get\+Fibonacci\+Average (\begin{DoxyParamCaption}\item[{int}]{number,  }\item[{int}]{repetitions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
@@ -72,7 +72,9 @@ Are 20 repetitions to obtain a time average
 
 
 \begin{DoxyParams}{Parameters}
-{\em number} & upper limit of fibonacci to find\\
+{\em number} & Upper limit of fibonacci to find\\
+\hline
+{\em repetitions} & The number of test iterations for testing\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -80,13 +82,13 @@ Does not return anything, generates a csv file
 \end{DoxyReturn}
 summary\texorpdfstring{$>$}{>} Function or method for testing and using fibonacci functions and creating a csv file 
 
-Definition at line \mbox{\hyperlink{_program_8cs_source_l00054}{54}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00055}{55}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=342pt]{class_program_ae494e584df2260401c2fce82e5ca8d53_icgraph}
+\includegraphics[width=342pt]{class_program_aaaf4b7f2825ed5dadc79a6f8c97bff09_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_program_ada72f8d1518f89bc2e6ad807d5059564}\label{class_program_ada72f8d1518f89bc2e6ad807d5059564}} 
@@ -97,11 +99,11 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line \mbox{\hyperlink{_program_8cs_source_l00109}{109}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00140}{140}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
 
 
 
-References \mbox{\hyperlink{_program_8cs_source_l00054}{Get\+Fibonacci\+Average()}}.
+References \mbox{\hyperlink{_program_8cs_source_l00055}{Get\+Fibonacci\+Average()}}.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]

@@ -38,66 +38,101 @@
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00044}00044         File.AppendAllText(\$\textcolor{stringliteral}{"{}fibonacci\{date.ToString("{}}yyyy-\/MM-\/ddTHH-\/mm\textcolor{stringliteral}{"{})\}.csv"{}},csvContent.ToString());}
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00045}00045     \}}
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00046}00046     }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00054}\mbox{\hyperlink{class_program_ae494e584df2260401c2fce82e5ca8d53}{00054}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_program_ae494e584df2260401c2fce82e5ca8d53}{GetFibonacciAverage}}(\textcolor{keywordtype}{int} number) \{}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00055}00055         \textcolor{comment}{//setting a date for the file name}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00056}00056         var date = DateTime.Now.ToLocalTime();}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00057}00057 }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00058}00058         \textcolor{comment}{//ceating a variables for get the fibonacci value}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00059}00059         var iterativeFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_iterative_fibonacci}{IterativeFibonacci}}();}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00060}00060         var recursiveFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_recursive_fibonacci}{RecursiveFibonacci}}();}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00061}00061         var memoryFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_memory_fibonacci}{MemoryFibonacci}}();}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00062}00062         var logarithmicFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_logarithmic_fibonacci}{LogarithmicFibonacci}}();}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00063}00063 }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00064}00064         \textcolor{comment}{//creating a StringBuilder for create a csv file}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00065}00065         StringBuilder csvContent = \textcolor{keyword}{new} StringBuilder();}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00066}00066         \textcolor{comment}{//defining the names and numbers of the columns of the csv file}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00067}00067         csvContent.AppendLine(\textcolor{stringliteral}{"{}Number,Iterative,Rcursive,Memory,Logarithmic"{}});}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00068}00068 }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00069}00069         \textcolor{comment}{//defining the number of test iterations}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00070}00070         \textcolor{keywordtype}{int} repetitions = 20;}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00071}00071         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < number + 1; i++) \{}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00072}00072             \textcolor{comment}{//array for get the average }}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00073}00073             var averageTime = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[4];}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00074}00074             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < repetitions; j++) \{}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00075}00075                 iterativeFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_iterative_fibonacci}{IterativeFibonacci}}(i);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00076}00076                 iterativeFibonacci.GetFibonacci();}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00077}00077                 averageTime[0] += iterativeFibonacci.Time;}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00078}00078                 }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00079}00079                 recursiveFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_recursive_fibonacci}{RecursiveFibonacci}}(i);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00080}00080                 recursiveFibonacci.GetFibonacci();}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00081}00081                 averageTime[1] += recursiveFibonacci.Time;}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00082}00082                 }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00083}00083                 memoryFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_memory_fibonacci}{MemoryFibonacci}}(i);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00084}00084                 memoryFibonacci.GetFibonacci();}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00085}00085                 \textcolor{comment}{//removing the fibonacci value to obtain the appropriate average}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00086}00086                 \textcolor{comment}{//if and only if it is not the last iteration}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00087}00087                 \textcolor{keywordflow}{if}(j + 1 != repetitions) memoryFibonacci.Pop(i);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00088}00088                 averageTime[2] += memoryFibonacci.Time;}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00089}00089 }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00090}00090                 logarithmicFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_logarithmic_fibonacci}{LogarithmicFibonacci}}(i);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00091}00091                 logarithmicFibonacci.GetFibonacci();}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00092}00092                 averageTime[3] += logarithmicFibonacci.Time;        }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00093}00093             \}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00094}00094             \textcolor{comment}{//getting the average delay per method, in case value equals to negative infinite then value equals to (float)0.00000000001}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00095}00095             averageTime[0] = (averageTime[0] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.00000000001 : (averageTime[0] / (\textcolor{keywordtype}{float})repetitions);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00096}00096             averageTime[1] = (averageTime[1] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.00000000001 : (averageTime[1] / (\textcolor{keywordtype}{float})repetitions);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00097}00097             averageTime[2] = (averageTime[2] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.00000000001 : (averageTime[2] / (\textcolor{keywordtype}{float})repetitions);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00098}00098             averageTime[3] = (averageTime[3] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.00000000001 : (averageTime[3] / (\textcolor{keywordtype}{float})repetitions);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00099}00099             \textcolor{comment}{//adding the time per funtion}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00100}00100             csvContent.AppendLine(\$\textcolor{stringliteral}{"{}\{i\},\{averageTime[0]\},\{averageTime[1]\},\{averageTime[2]\},\{averageTime[3]\}"{}}); }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00101}00101         \}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00102}00102         \textcolor{comment}{//creating the csv file, the name varies by date}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00103}00103         File.AppendAllText(\$\textcolor{stringliteral}{"{}FibonacciAverage\{date.ToString("{}}yyyy-\/MM-\/ddTHH-\/mm\textcolor{stringliteral}{"{})\}.csv"{}},csvContent.ToString());}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00104}00104     \}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00105}00105 }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00109}\mbox{\hyperlink{class_program_ada72f8d1518f89bc2e6ad807d5059564}{00109}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_program_ada72f8d1518f89bc2e6ad807d5059564}{Main}} (\textcolor{keywordtype}{string}[] args) \{}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00110}00110         \textcolor{comment}{//get a number }}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00111}00111         Console.WriteLine(\textcolor{stringliteral}{"{}number: "{}});}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00112}00112         \textcolor{comment}{//if input value equals to "{}"{} or empty, string value equals to 0}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00113}00113         \textcolor{keywordtype}{int} number = Int32.Parse(Console.ReadLine() ?? \textcolor{stringliteral}{"{}0"{}});}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00114}00114         \mbox{\hyperlink{class_program_ae494e584df2260401c2fce82e5ca8d53}{GetFibonacciAverage}}(number);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00115}00115     \}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00116}00116   }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00117}00117 \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00055}\mbox{\hyperlink{class_program_aaaf4b7f2825ed5dadc79a6f8c97bff09}{00055}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_program_aaaf4b7f2825ed5dadc79a6f8c97bff09}{GetFibonacciAverage}}(\textcolor{keywordtype}{int} number, \textcolor{keywordtype}{int} repetitions) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00056}00056         \textcolor{comment}{//setting a date for the file name}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00057}00057         var date = DateTime.Now.ToLocalTime();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00059}00059         \textcolor{comment}{//ceating a variables for get the fibonacci value}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00060}00060         var iterativeFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_iterative_fibonacci}{IterativeFibonacci}}();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00061}00061         var recursiveFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_recursive_fibonacci}{RecursiveFibonacci}}();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00062}00062         var memoryFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_memory_fibonacci}{MemoryFibonacci}}();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00063}00063         var logarithmicFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_logarithmic_fibonacci}{LogarithmicFibonacci}}();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00065}00065         \textcolor{comment}{//creating a StringBuilder for create a csv file}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00066}00066         StringBuilder csvContent = \textcolor{keyword}{new} StringBuilder();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00067}00067         \textcolor{comment}{//defining the names and numbers of the columns of the csv file}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00068}00068         csvContent.AppendLine(\textcolor{stringliteral}{"{}Number,Iterative,Rcursive,Memory,Logarithmic"{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00070}00070         var myFibo = \textcolor{keyword}{new} Dictionary<int,float[]>();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00072}00072         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < number + 1; i++) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00073}00073             \textcolor{comment}{//array for get the average }}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00074}00074             var averageTime = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[4];}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00075}00075             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 1; j < repetitions + 1; j++) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00076}00076                 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00077}00077 \textcolor{comment}{                in all Fibonacci calculations is added the condition that the time is not }}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00078}00078 \textcolor{comment}{                greater than the sum of the obtained times}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00079}00079 \textcolor{comment}{                */}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00080}00080                 iterativeFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_iterative_fibonacci}{IterativeFibonacci}}(i);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00081}00081                 iterativeFibonacci.GetFibonacci();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00082}00082                 averageTime[0] += j > 1 \&\& (iterativeFibonacci.Time) > ((\textcolor{keywordtype}{float})1.5 * averageTime[0]) ? averageTime[0] / (\textcolor{keywordtype}{float})j : iterativeFibonacci.Time;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00083}00083                 }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00084}00084                 recursiveFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_recursive_fibonacci}{RecursiveFibonacci}}(i);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00085}00085                 recursiveFibonacci.GetFibonacci();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00086}00086                 averageTime[1] += j > 1 \&\& (recursiveFibonacci.Time) > ((\textcolor{keywordtype}{float})1.5 * averageTime[1]) ? averageTime[1] / (\textcolor{keywordtype}{float})j : recursiveFibonacci.Time;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00087}00087                 }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00088}00088                 memoryFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_memory_fibonacci}{MemoryFibonacci}}(i);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00089}00089                 memoryFibonacci.GetFibonacci();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00090}00090                 \textcolor{comment}{//removing the fibonacci value to obtain the appropriate average}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00091}00091                 \textcolor{comment}{//if and only if it is not the last iteration}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00092}00092                 \textcolor{keywordflow}{if}(j + 1 != repetitions) memoryFibonacci.Pop(i);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00093}00093                 averageTime[2] += j > 1 \&\& (memoryFibonacci.Time) > ((\textcolor{keywordtype}{float})1.5 * averageTime[2]) ? averageTime[2] / (\textcolor{keywordtype}{float})j : memoryFibonacci.Time;}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00095}00095                 logarithmicFibonacci = \textcolor{keyword}{new} \mbox{\hyperlink{class_logarithmic_fibonacci}{LogarithmicFibonacci}}(i);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00096}00096                 logarithmicFibonacci.GetFibonacci();}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00097}00097                 averageTime[3] += j > 1 \&\& (logarithmicFibonacci.Time) > ((\textcolor{keywordtype}{float})1.5 * averageTime[3]) ? averageTime[3] / (\textcolor{keywordtype}{float})j : logarithmicFibonacci.Time;     }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00098}00098             \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00099}00099             \textcolor{comment}{//getting the average delay per method, in case value equals to negative infinite then value equals to (float)0.0000000000000001}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00100}00100             averageTime[0] = (averageTime[0] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.0000000000000001 : (averageTime[0] / (\textcolor{keywordtype}{float})repetitions);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00101}00101             averageTime[1] = (averageTime[1] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.0000000000000001 : (averageTime[1] / (\textcolor{keywordtype}{float})repetitions);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00102}00102             averageTime[2] = (averageTime[2] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.0000000000000001 : (averageTime[2] / (\textcolor{keywordtype}{float})repetitions);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00103}00103             averageTime[3] = (averageTime[3] / (float)repetitions) == \textcolor{keywordtype}{float}.NegativeInfinity ? (float)0.0000000000000001 : (averageTime[3] / (\textcolor{keywordtype}{float})repetitions);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00104}00104             myFibo.Add(i, averageTime);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00105}00105         \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00107}00107         \textcolor{comment}{//regulating time values obtained}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00108}00108         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < number + 1; i++) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00109}00109             \textcolor{comment}{//iteration by Fibonacci type}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00110}00110             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < 4; j++) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00111}00111                 \textcolor{keywordflow}{if} (i > 0 \&\& i + 1 < number) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00112}00112                     \textcolor{comment}{//if the Fibonacci time of N is less than the Fibonacci time of N-\/1}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00113}00113                     \textcolor{keywordflow}{if} (myFibo[i-\/1][j] > myFibo[i][j]) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00114}00114                         myFibo[i][j] = (float)((myFibo[i-\/1][j] + myFibo[i+1][j]) / (float)2.0);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00115}00115                     \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00116}00116                     \textcolor{comment}{//if the Fibonacci time of N+1 is less than the Fibonacci time of N}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00117}00117                     \textcolor{keywordflow}{if} (myFibo[i+1][j] < myFibo[i][j]) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00118}00118                         myFibo[i][j] = (float)((myFibo[i-\/1][j] + myFibo[i+1][j]) / (float)2.0);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00119}00119                     \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00120}00120                 \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00121}00121                 \textcolor{comment}{//if the Fibonacci time of 0 is less than the Fibonacci time of 1}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00122}00122                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i == 0) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00123}00123                     \textcolor{keywordflow}{if} (myFibo[i+1][j] < myFibo[i][j]) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00124}00124                         myFibo[i][j] = (float)((myFibo[i+1][j]) / (float)2.0);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00125}00125                     \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00126}00126                 \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00127}00127                 \textcolor{comment}{//Nothing}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00128}00128                 \textcolor{keywordflow}{else} \{ \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00129}00129             \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00130}00130             \textcolor{comment}{//adding the time per funtion}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00131}00131             csvContent.AppendLine(\$\textcolor{stringliteral}{"{}\{i\},\{myFibo[i][0]\},\{myFibo[i][1]\},\{myFibo[i][2]\},\{myFibo[i][3]\}"{}}); }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00132}00132         \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00133}00133         \textcolor{comment}{//creating the csv file, the name varies by date}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00134}00134         File.AppendAllText(\$\textcolor{stringliteral}{"{}FibonacciAverage\{date.ToString("{}}yyyy-\/MM-\/ddTHH-\/mm\textcolor{stringliteral}{"{})\}.csv"{}},csvContent.ToString());}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00135}00135     \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00136}00136 }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00140}\mbox{\hyperlink{class_program_ada72f8d1518f89bc2e6ad807d5059564}{00140}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_program_ada72f8d1518f89bc2e6ad807d5059564}{Main}} (\textcolor{keywordtype}{string}[] args) \{}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00141}00141         \textcolor{comment}{//get the number }}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00142}00142         Console.WriteLine(\textcolor{stringliteral}{"{}number: "{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00143}00143         \textcolor{comment}{//if input value equals to "{}"{} or empty, string value equals to 0}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00144}00144         \textcolor{keywordtype}{int} number = Int32.Parse(Console.ReadLine() ?? \textcolor{stringliteral}{"{}0"{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00145}00145 }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00146}00146         \textcolor{comment}{//get the repetitions }}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00147}00147         Console.WriteLine(\textcolor{stringliteral}{"{}repetitions: "{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00148}00148         \textcolor{comment}{//if input value equals to "{}"{} or empty, string value equals to 20}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00149}00149         \textcolor{keywordtype}{int} repetitions = Int32.Parse(Console.ReadLine() ?? \textcolor{stringliteral}{"{}5"{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00150}00150         \mbox{\hyperlink{class_program_aaaf4b7f2825ed5dadc79a6f8c97bff09}{GetFibonacciAverage}}(number,repetitions);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00151}00151     \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00152}00152   }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00153}00153 \}}
 
 \end{DoxyCode}

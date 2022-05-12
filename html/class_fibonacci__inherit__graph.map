@@ -1,7 +1,7 @@
 <map id="Fibonacci" name="Fibonacci">
-<area shape="rect" id="node1" title="Base class for Fibonacci Iterative, Recursive, Memory and Logarithmic" alt="" coords="268,5,427,112"/>
-<area shape="rect" id="node2" href="$class_iterative_fibonacci.html" title="The Fibonacci child class uses a loop to find the fibonacci." alt="" coords="5,189,148,311"/>
-<area shape="rect" id="node3" href="$class_logarithmic_fibonacci.html" title="The Fibonacci child class uses matrix multiplication to find the fibonacci." alt="" coords="173,189,338,311"/>
-<area shape="rect" id="node4" href="$class_memory_fibonacci.html" title="The Fibonacci child class uses a Dictionary as memory to find the fibonacci using the Dictionary to c..." alt="" coords="362,160,517,340"/>
-<area shape="rect" id="node5" href="$class_recursive_fibonacci.html" title="The Fibonacci child class, uses a recursive loop to find the fibonacci" alt="" coords="541,175,695,325"/>
+<area shape="rect" id="node1" title="Base class for Fibonacci Iterative, Recursive, Memory and Logarithmic" alt="" coords="276,5,435,112"/>
+<area shape="rect" id="node2" href="$class_iterative_fibonacci.html" title="The Fibonacci child class uses a loop to find the fibonacci." alt="" coords="5,189,156,311"/>
+<area shape="rect" id="node3" href="$class_logarithmic_fibonacci.html" title="The Fibonacci child class uses matrix multiplication to find the fibonacci." alt="" coords="181,189,346,311"/>
+<area shape="rect" id="node4" href="$class_memory_fibonacci.html" title="The Fibonacci child class uses a Dictionary as memory to find the fibonacci using the Dictionary to c..." alt="" coords="370,160,525,340"/>
+<area shape="rect" id="node5" href="$class_recursive_fibonacci.html" title="The Fibonacci child class, uses a recursive loop to find the fibonacci" alt="" coords="549,175,703,325"/>
 </map>
