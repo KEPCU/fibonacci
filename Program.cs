@@ -142,11 +142,14 @@ public class Program {
         Console.WriteLine("number: ");
         //if input value equals to "" or empty, string value equals to 0
         int number = Int32.Parse(Console.ReadLine() ?? "0");
-
+        //in case number is less than 0
+        while (number < 0) number = Int32.Parse(Console.ReadLine() ?? "0");
         //get the repetitions 
         Console.WriteLine("repetitions: ");
         //if input value equals to "" or empty, string value equals to 20
         int repetitions = Int32.Parse(Console.ReadLine() ?? "5");
+        //in case repetitions is less than 0
+        while (repetitions < 1) repetitions = Int32.Parse(Console.ReadLine() ?? "5");
         GetFibonacciAverage(number,repetitions);
     }
   

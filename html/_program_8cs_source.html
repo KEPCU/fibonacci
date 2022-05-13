@@ -189,15 +189,18 @@ $(function() {
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        Console.WriteLine(<span class="stringliteral">&quot;number: &quot;</span>);</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="comment">//if input value equals to &quot;&quot; or empty, string value equals to 0</span></div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keywordtype">int</span> number = Int32.Parse(Console.ReadLine() ?? <span class="stringliteral">&quot;0&quot;</span>);</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="comment">//get the repetitions </span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        Console.WriteLine(<span class="stringliteral">&quot;repetitions: &quot;</span>);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="comment">//if input value equals to &quot;&quot; or empty, string value equals to 20</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordtype">int</span> repetitions = Int32.Parse(Console.ReadLine() ?? <span class="stringliteral">&quot;5&quot;</span>);</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <a class="code hl_function" href="class_program.html#aaaf4b7f2825ed5dadc79a6f8c97bff09">GetFibonacciAverage</a>(number,repetitions);</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    }</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>}</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="comment">//in case number is less than 0</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordflow">while</span> (number &lt; 0) number = Int32.Parse(Console.ReadLine() ?? <span class="stringliteral">&quot;0&quot;</span>);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="comment">//get the repetitions </span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        Console.WriteLine(<span class="stringliteral">&quot;repetitions: &quot;</span>);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="comment">//if input value equals to &quot;&quot; or empty, string value equals to 20</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordtype">int</span> repetitions = Int32.Parse(Console.ReadLine() ?? <span class="stringliteral">&quot;5&quot;</span>);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="comment">//in case repetitions is less than 0</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordflow">while</span> (repetitions &lt; 1) repetitions = Int32.Parse(Console.ReadLine() ?? <span class="stringliteral">&quot;5&quot;</span>);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <a class="code hl_function" href="class_program.html#aaaf4b7f2825ed5dadc79a6f8c97bff09">GetFibonacciAverage</a>(number,repetitions);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
 <div class="ttc" id="aclass_iterative_fibonacci_html"><div class="ttname"><a href="class_iterative_fibonacci.html">IterativeFibonacci</a></div><div class="ttdoc">The Fibonacci child class uses a loop to find the fibonacci.</div><div class="ttdef"><b>Definition:</b> <a href="_fibonacci_8cs_source.html#l00031">Fibonacci.cs:31</a></div></div>
 <div class="ttc" id="aclass_logarithmic_fibonacci_html"><div class="ttname"><a href="class_logarithmic_fibonacci.html">LogarithmicFibonacci</a></div><div class="ttdoc">The Fibonacci child class uses matrix multiplication to find the fibonacci.</div><div class="ttdef"><b>Definition:</b> <a href="_fibonacci_8cs_source.html#l00174">Fibonacci.cs:174</a></div></div>
 <div class="ttc" id="aclass_memory_fibonacci_html"><div class="ttname"><a href="class_memory_fibonacci.html">MemoryFibonacci</a></div><div class="ttdoc">The Fibonacci child class uses a Dictionary as memory to find the fibonacci using the Dictionary to c...</div><div class="ttdef"><b>Definition:</b> <a href="_fibonacci_8cs_source.html#l00115">Fibonacci.cs:115</a></div></div>

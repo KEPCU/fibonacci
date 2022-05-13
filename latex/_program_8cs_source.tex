@@ -125,14 +125,17 @@
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00142}00142         Console.WriteLine(\textcolor{stringliteral}{"{}number: "{}});}
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00143}00143         \textcolor{comment}{//if input value equals to "{}"{} or empty, string value equals to 0}}
 \DoxyCodeLine{\Hypertarget{_program_8cs_source_l00144}00144         \textcolor{keywordtype}{int} number = Int32.Parse(Console.ReadLine() ?? \textcolor{stringliteral}{"{}0"{}});}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00145}00145 }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00146}00146         \textcolor{comment}{//get the repetitions }}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00147}00147         Console.WriteLine(\textcolor{stringliteral}{"{}repetitions: "{}});}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00148}00148         \textcolor{comment}{//if input value equals to "{}"{} or empty, string value equals to 20}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00149}00149         \textcolor{keywordtype}{int} repetitions = Int32.Parse(Console.ReadLine() ?? \textcolor{stringliteral}{"{}5"{}});}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00150}00150         \mbox{\hyperlink{class_program_aaaf4b7f2825ed5dadc79a6f8c97bff09}{GetFibonacciAverage}}(number,repetitions);}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00151}00151     \}}
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00152}00152   }
-\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00153}00153 \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00145}00145         \textcolor{comment}{//in case number is less than 0}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00146}00146         \textcolor{keywordflow}{while} (number < 0) number = Int32.Parse(Console.ReadLine() ?? \textcolor{stringliteral}{"{}0"{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00147}00147         \textcolor{comment}{//get the repetitions }}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00148}00148         Console.WriteLine(\textcolor{stringliteral}{"{}repetitions: "{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00149}00149         \textcolor{comment}{//if input value equals to "{}"{} or empty, string value equals to 20}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00150}00150         \textcolor{keywordtype}{int} repetitions = Int32.Parse(Console.ReadLine() ?? \textcolor{stringliteral}{"{}5"{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00151}00151         \textcolor{comment}{//in case repetitions is less than 0}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00152}00152         \textcolor{keywordflow}{while} (repetitions < 1) repetitions = Int32.Parse(Console.ReadLine() ?? \textcolor{stringliteral}{"{}5"{}});}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00153}00153         \mbox{\hyperlink{class_program_aaaf4b7f2825ed5dadc79a6f8c97bff09}{GetFibonacciAverage}}(number,repetitions);}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00154}00154     \}}
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00155}00155   }
+\DoxyCodeLine{\Hypertarget{_program_8cs_source_l00156}00156 \}}
 
 \end{DoxyCode}
