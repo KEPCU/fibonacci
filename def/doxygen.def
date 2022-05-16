@@ -122,12 +122,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = '_fibonacci_8cs_1a7076718f8f868dd77c2d2d132f0ef9bb';
-        sec-mem-ref-line = '141';
+        sec-mem-ref-line = '157';
         sec-mem-ref-name = 'MemoryFibonacci::GetFibonacci';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = '_fibonacci_8cs_1af08cfd64a2c71e7492d9e6d8e06dad87';
-        sec-mem-ref-line = '186';
+        sec-mem-ref-line = '202';
         sec-mem-ref-name = 'LogarithmicFibonacci::GetFibonacci';
     };
     }; /* sec-member */
@@ -163,12 +163,12 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = '_fibonacci_8cs_1a7076718f8f868dd77c2d2d132f0ef9bb';
-        sec-mem-ref-line = '141';
+        sec-mem-ref-line = '157';
         sec-mem-ref-name = 'MemoryFibonacci::GetFibonacci';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = '_fibonacci_8cs_1af08cfd64a2c71e7492d9e6d8e06dad87';
-        sec-mem-ref-line = '186';
+        sec-mem-ref-line = '202';
         sec-mem-ref-name = 'LogarithmicFibonacci::GetFibonacci';
     };
     }; /* sec-member */
@@ -414,7 +414,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'number';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-      sec-mem-desc-line = '178';
+      sec-mem-desc-line = '194';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 <summary>Contructor for define Number property </summary>
 _EnD_oF_dEf_TeXt_;
@@ -435,7 +435,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'LogarithmicFibonacci';
       sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-      sec-mem-desc-line = '181';
+      sec-mem-desc-line = '197';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -453,7 +453,7 @@ Int64
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'GetFibonacci';
       sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-      sec-mem-desc-line = '186';
+      sec-mem-desc-line = '202';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 <summary>Get fibonacci of Number Property using memory (Memory Property)</summary>
 _EnD_oF_dEf_TeXt_;
@@ -474,7 +474,7 @@ _EnD_oF_dEf_TeXt_;
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-  cp-fileline  = '174';
+  cp-fileline  = '190';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 <summary>
  The Fibonacci child class uses matrix multiplication to find the fibonacci.
@@ -553,7 +553,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'number';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-      sec-mem-desc-line = '123';
+      sec-mem-desc-line = '139';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 <summary>Contructor for define Number property </summary>
 _EnD_oF_dEf_TeXt_;
@@ -574,7 +574,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'MemoryFibonacci';
       sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-      sec-mem-desc-line = '126';
+      sec-mem-desc-line = '142';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 
 _EnD_oF_dEf_TeXt_;
@@ -598,7 +598,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'key';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-      sec-mem-desc-line = '130';
+      sec-mem-desc-line = '146';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 <summary> Remove a item or element of Dictionary </summary>
 _EnD_oF_dEf_TeXt_;
@@ -607,7 +607,7 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceto = {
         sec-mem-ref-id = '_fibonacci_8cs_1a9cbf1104397681255e42e0ff0070c933';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '134';
         sec-mem-ref-name = 'Memory';
     };
     }; /* sec-member */
@@ -621,7 +621,7 @@ Int64
 _EnD_oF_dEf_TeXt_;
       sec-mem-name = 'GetFibonacci';
       sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-      sec-mem-desc-line = '141';
+      sec-mem-desc-line = '157';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 <summary>Get fibonacci of Number Property using memory (Memory Property)</summary>
 _EnD_oF_dEf_TeXt_;
@@ -634,7 +634,7 @@ The Time property is equal to the delay time, use Memory(Dicctionary)
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceto = {
         sec-mem-ref-id = '_fibonacci_8cs_1a7076718f8f868dd77c2d2d132f0ef9bb';
-        sec-mem-ref-line = '141';
+        sec-mem-ref-line = '157';
         sec-mem-ref-name = 'GetFibonacci';
     };
       sec-mem-referenceto = {
@@ -649,7 +649,7 @@ _EnD_oF_dEf_TeXt_;
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = '_fibonacci_8cs_1a7076718f8f868dd77c2d2d132f0ef9bb';
-        sec-mem-ref-line = '141';
+        sec-mem-ref-line = '157';
         sec-mem-ref-name = 'GetFibonacci';
     };
     }; /* sec-member */
@@ -669,7 +669,7 @@ _EnD_oF_dEf_TeXt_;
 = new Dictionary<int, Int64>()
 _EnD_oF_dEf_TeXt_;
       sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-      sec-mem-desc-line = '118';
+      sec-mem-desc-line = '134';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 <summary> Data structure for storing the fibonacci already found </summary>
 _EnD_oF_dEf_TeXt_;
@@ -678,12 +678,12 @@ _EnD_oF_dEf_TeXt_;
 _EnD_oF_dEf_TeXt_;
       sec-mem-referencedby = {
         sec-mem-ref-id = '_fibonacci_8cs_1a0f6e602c4dde94de01cc70d0818ffc6d';
-        sec-mem-ref-line = '163';
+        sec-mem-ref-line = '179';
         sec-mem-ref-name = 'GetFibonacci';
     };
       sec-mem-referencedby = {
         sec-mem-ref-id = '_fibonacci_8cs_1af33a94ecf9808e1d9a29019bdee53662';
-        sec-mem-ref-line = '130';
+        sec-mem-ref-line = '146';
         sec-mem-ref-name = 'Pop';
     };
     }; /* sec-member */
@@ -706,7 +706,7 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-param-declname = 'number';
       }; /*        sec-mem-param--param */
       sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-      sec-mem-desc-line = '163';
+      sec-mem-desc-line = '179';
       sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
 <summary>Get fibonacci of Number Property using memory (Memory Property)</summary>
 _EnD_oF_dEf_TeXt_;
@@ -720,18 +720,18 @@ The Time property is equal to the delay time, use Memory(Dicctionary)
 _EnD_oF_dEf_TeXt_;
       sec-mem-referenceto = {
         sec-mem-ref-id = '_fibonacci_8cs_1a7076718f8f868dd77c2d2d132f0ef9bb';
-        sec-mem-ref-line = '141';
+        sec-mem-ref-line = '157';
         sec-mem-ref-name = 'GetFibonacci';
     };
       sec-mem-referenceto = {
         sec-mem-ref-id = '_fibonacci_8cs_1a9cbf1104397681255e42e0ff0070c933';
-        sec-mem-ref-line = '118';
+        sec-mem-ref-line = '134';
         sec-mem-ref-name = 'Memory';
     };
     }; /* sec-member */
   }; /* cp-section */
   cp-filename  = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
-  cp-fileline  = '115';
+  cp-fileline  = '131';
   cp-briefdesc = <<_EnD_oF_dEf_TeXt_
 <summary>
  The Fibonacci child class uses a Dictionary as memory to find the 
@@ -1041,6 +1041,76 @@ _EnD_oF_dEf_TeXt_;
         sec-mem-ref-id = '_fibonacci_8cs_1a6d7071da57204730de6ddd10778d7377';
         sec-mem-ref-line = '82';
         sec-mem-ref-name = 'GetFibonacci';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_recursive_fibonacci_1ad8b3c24b8fb69da05998747aad78fc2c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Int64
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetFibonacci2';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Int64
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '112';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+<summary>Get fibonacci of Number Property using recusivity</summary>
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+<param name="number">number of fibonacci to find</param>
+<returns> Fibonacci of Number </returns>     <br>
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1ad8b3c24b8fb69da05998747aad78fc2c';
+        sec-mem-ref-line = '112';
+        sec-mem-ref-name = 'GetFibonacci2';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1ad8b3c24b8fb69da05998747aad78fc2c';
+        sec-mem-ref-line = '112';
+        sec-mem-ref-name = 'GetFibonacci2';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_recursive_fibonacci_1a09aae7d52d5736289b4c17a8db88d3a8';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+Int64
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'GetFibonacci3';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+Int64
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'number';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = 'E:/C#/UNI/fibonacci/Fibonacci.cs';
+      sec-mem-desc-line = '121';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+<summary>Get fibonacci of Number Property using recusivity</summary>
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+<param name="number">number of fibonacci to find</param>
+<returns> Fibonacci of Number </returns>     <br>
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a09aae7d52d5736289b4c17a8db88d3a8';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'GetFibonacci3';
+    };
+      sec-mem-referencedby = {
+        sec-mem-ref-id = '_fibonacci_8cs_1a09aae7d52d5736289b4c17a8db88d3a8';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'GetFibonacci3';
     };
     }; /* sec-member */
   }; /* cp-section */

@@ -101,9 +101,25 @@ public class RecursiveFibonacci : Fibonacci {
         if(number < 1) return new Int64[1] {0}; 
         if(number < 2) return new Int64[2] {0,1}; 
 
-        var memoryPrev = GetFibonacci(number - 1);
-        var fibonacci = memoryPrev.Concat(new Int64[]{memoryPrev[memoryPrev.Length - 2] + memoryPrev[memoryPrev.Length - 1]});    
+        var fibonacciPrev = GetFibonacci(number - 1);
+        var fibonacci = fibonacciPrev.Concat(new Int64[]{fibonacciPrev[fibonacciPrev.Length - 2] + fibonacciPrev[fibonacciPrev.Length - 1]});    
         return fibonacci.ToArray();
+    }
+
+    /// <summary>Get fibonacci of Number Property using recusivity</summary>
+    /// <param name="number">number of fibonacci to find</param>
+    /// <returns> Fibonacci of Number </returns>    
+    Int64 GetFibonacci2(Int64 number) {
+        if(number < 1) return 0; 
+        if(number < 2) return 1; 
+        return GetFibonacci2(number-1) + GetFibonacci2(number-2);
+    }
+
+    /// <summary>Get fibonacci of Number Property using recusivity</summary>
+    /// <param name="number">number of fibonacci to find</param>
+    /// <returns> Fibonacci of Number </returns>    
+    Int64 GetFibonacci3(Int64 number) { 
+        return number < 2 ? number : GetFibonacci3(number-1) + GetFibonacci3(number-2);
     }
 
 }
